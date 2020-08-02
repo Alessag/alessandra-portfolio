@@ -18,6 +18,12 @@
       {
         "extensions": [".js", ".jsx"]
       }
+    ],
+    "react/jsx-one-expression-per-line": [
+      "off",
+      {
+        "allow": "single-child"
+      }
     ]
   }
 }
