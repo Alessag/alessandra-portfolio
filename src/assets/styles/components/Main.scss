@@ -1,0 +1,19 @@
+@import '../main.scss';
+
+.main {
+  .social-links {
+    display: flex;
+
+    li {
+      list-style: none;
+      margin-right: 2rem;
+      text-transform: uppercase;
+      font-weight: bold;
+
+      &:hover {
+        color: $color-purple;
+        cursor: pointer;
+      }
+    }
+  }
+}

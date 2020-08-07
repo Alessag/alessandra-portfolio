@@ -1,0 +1,24 @@
+@import '../main.scss';
+
+.header {
+  background-color: $color-black;
+  color: $color-gray;
+  .menu,
+  .logo,
+  .navbar {
+    display: flex;
+    justify-content: space-between;
+    .navbar {
+      list-style: none;
+      li {
+        font-weight: bold;
+        margin-right: 5rem;
+        text-transform: uppercase;
+        &:hover {
+          color: $color-purple;
+          cursor: pointer;
+        }
+      }
+    }
+  }
+}
