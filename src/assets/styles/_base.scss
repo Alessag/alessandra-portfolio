@@ -1,0 +1,38 @@
+/*------------------------------------*\
+    $BUTTONS
+\*------------------------------------*/
+
+/*------------------------------------*\
+    $FONT-FACE
+\*------------------------------------*/
+$basefont: 'Open Sans', sans-serif;
+$altfont: 'Roboto', sans-serif;
+$baseheadingfont: $altfont;
+
+$baseheadingfontweight: bold;
+
+$basefontsize: 16;
+
+/*------------------------------------*\
+    $COLORS
+\*------------------------------------*/
+
+$color-green: #54ecc4;
+$color-purple: #8083ff;
+$color-gray: #bcbcbc;
+$color-black: #1f1f1f;
+
+//Links
+
+$linkcolor: $color-purple;
+$linkhover: $linkcolor;
+
+/*------------------------------------*\
+    $TEXTURES
+\*------------------------------------*/
+
+$buttonbackground: transparent;
+$buttonbordercolor: currentcolor;
+$buttoncolor: $color-purple;
+$buttonborderwidth: 1px;
+$buttonborderstyle: solid;
