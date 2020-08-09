@@ -1,22 +1,28 @@
 @import '../main.scss';
 
 .header {
-  background-color: $color-black;
+  background-color: white;
   color: $color-gray;
-  .menu,
-  .logo,
-  .navbar {
+  .menu {
     display: flex;
     justify-content: space-between;
     .navbar {
-      list-style: none;
-      li {
-        font-weight: bold;
-        margin-right: 5rem;
-        text-transform: uppercase;
-        &:hover {
-          color: $color-purple;
-          cursor: pointer;
+      ul {
+        display: flex;
+        flex-direction: row;
+        list-style: none;
+        li {
+          font-weight: bold;
+          margin-right: 5rem;
+          text-transform: uppercase;
+          a {
+            color: $color-gray;
+            text-decoration: none;
+            &:hover {
+              color: $color-purple;
+              cursor: pointer;
+            }
+          }
         }
       }
     }
