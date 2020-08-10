@@ -7,7 +7,7 @@ function Header() {
   return (
     <header className='header'>
       <Container className='menu'>
-        <div className='manu__logo'>
+        <div className='menu__logo'>
           <img className='menu__logo-img' alt='Logo' />
         </div>
 
