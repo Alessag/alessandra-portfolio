@@ -1,6 +1,4 @@
 import React from 'react';
-import Container from '@material-ui/core/Container';
-import Divider from '@material-ui/core/Divider';
 import {
   AiOutlineMail,
   AiOutlineInstagram,
@@ -13,8 +11,7 @@ import '../assets/styles/components/Footer.scss';
 
 const Footer = () => {
   return (
-    <Container id='footer'>
-      <Divider orientation='horizontal' />
+    <div id='footer'>
       <ul className='footer__social-links'>
         <li>
           <AiOutlineMail size='1.5rem' color='white' />
@@ -35,7 +32,7 @@ const Footer = () => {
       <h4 className='footer__text'>
         2020 <AiOutlineCopyrightCircle /> Alessandra Amicarella
       </h4>
-    </Container>
+    </div>
   );
 };
 
