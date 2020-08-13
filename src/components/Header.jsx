@@ -1,12 +1,11 @@
 import React from 'react';
 import '../assets/styles/components/Header.scss';
-import Container from '@material-ui/core/Container';
 import { Link } from 'react-router-dom';
 
 function Header() {
   return (
     <header className='header'>
-      <Container className='menu'>
+      <div className='menu container-fluid'>
         <div className='menu__logo'>
           <img className='menu__logo-img' alt='Logo' />
         </div>
@@ -24,7 +23,7 @@ function Header() {
             </li>
           </ul>
         </nav>
-      </Container>
+      </div>
     </header>
   );
 }
