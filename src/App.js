@@ -1,6 +1,8 @@
 import React from 'react';
-import Header from './Components/Header';
-import Main from './Components/Main';
+import Header from './components/Header';
+import Main from './components/Main';
+import Footer from './components/Footer';
+import Certificates from './components/Certificates';
 
 const App = () => {
   const data = {
@@ -261,23 +263,14 @@ const App = () => {
     ],
   };
 
-  console.log(data);
+  // console.log(data);
 
   return (
     <div>
       <Header />
       <Main />
-      {/* <h1>Certifications</h1>
-      {data.certifications.map((item) => (
-        <div key={item.id}>
-          <h1>{item.title}</h1>
-          <h3>{item.description}</h3>
-          <p>{item.date}</p>
-          <a href={item.url} target='_blank' rel='noreferrer'>
-            {item.title}
-          </a>
-        </div>
-      ))} */}
+      <Certificates certificate={data.certifications} />
+      <Footer />
     </div>
   );
 };
