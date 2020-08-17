@@ -2,7 +2,6 @@ import React from 'react';
 import Header from './components/Header';
 import Main from './components/Main';
 import Footer from './components/Footer';
-import Certificates from './components/Certificates';
 
 const App = () => {
   const data = {
@@ -60,7 +59,7 @@ const App = () => {
         id: '1',
         url:
           'https://www.freecodecamp.org/certification/alessag/front-end-libraries',
-        img: 'url de la imagen',
+        image: './assets/images/01.png',
         academy: 'FreeCodeCamp',
         title: 'Front End Libraries',
         date: 'July, 2020',
@@ -70,7 +69,7 @@ const App = () => {
         id: '2',
         url:
           'https://www.freecodecamp.org/certification/alessag/javascript-algorithms-and-data-structures',
-        img: 'url de la imagen',
+        image: 'url de la imagen',
         academy: 'FreeCodeCamp',
         title: 'JavaScript Algorithms and Data Structures',
         date: 'May,  2020',
@@ -80,7 +79,7 @@ const App = () => {
         id: '3',
         url:
           'https://www.freecodecamp.org/certification/alessag/responsive-web-design',
-        img: 'url de la imagen',
+        image: 'url de la imagen',
         academy: 'FreeCodeCamp',
         title: 'Responsive Web Design',
         date: 'April, 2020',
@@ -90,7 +89,7 @@ const App = () => {
         id: '4',
         url:
           'https://platzi.com/@Alessandrag/curso/1170-git-github-2017-old/diploma/detalle/',
-        img: 'url de la imagen',
+        image: 'url de la imagen',
         academy: 'Platzi',
         title: 'Curso Profesional de Git y Github',
         date: 'July, 2018',
@@ -100,7 +99,7 @@ const App = () => {
         id: '5',
         url:
           'https://platzi.com/@Alessandrag/curso/1054-fw-frontend-2016/diploma/detalle/',
-        img: 'url de la imagen',
+        image: 'url de la imagen',
         academy: 'Platzi',
         title: 'Curso de Frontend con Bootstrap y Foundation',
         date: 'December, 2017',
@@ -109,7 +108,7 @@ const App = () => {
       {
         id: '6',
         url: 'https://platzi.com/@Alessandrag/curso/1244-sass/diploma/detalle/',
-        img: 'url de la imagen',
+        image: 'url de la imagen',
         academy: 'Platzi',
         title: 'Curso de Sass',
         date: 'May, 2018',
@@ -119,7 +118,7 @@ const App = () => {
         id: '7',
         url:
           'https://platzi.com/@Alessandrag/curso/1034-html5-css3-2016/diploma/detalle/',
-        img: 'url de la imagen',
+        image: 'url de la imagen',
         academy: 'Platzi',
         title: 'Curso de Desarrollo Web Online',
         date: 'Agust, 2017',
@@ -129,7 +128,7 @@ const App = () => {
         id: '8',
         url:
           'https://platzi.com/@Alessandrag/curso/1103-animaciones-web/diploma/detalle/',
-        img: 'url de la imagen',
+        image: 'url de la imagen',
         academy: 'Platzi',
         title: 'Curso de Animaciones para la Web',
         date: 'May, 2018',
@@ -139,7 +138,7 @@ const App = () => {
         id: '9',
         url:
           'https://platzi.com/@Alessandrag/curso/1050-programacion-basica/diploma/detalle/',
-        img: 'url de la imagen',
+        image: 'url de la imagen',
         academy: 'Platzi',
         title: 'Curso de Programación Básica',
         date: 'May, 2017',
@@ -148,7 +147,7 @@ const App = () => {
       {
         id: '10',
         url: 'hola',
-        img: 'url de la imagen',
+        image: 'url de la imagen',
         academy: 'Platzi',
         title: 'Curso de Fundamentos de JavaScript',
         date: 'July, 2017',
@@ -268,8 +267,11 @@ const App = () => {
   return (
     <div>
       <Header />
-      <Main />
-      <Certificates certificate={data.certifications} />
+      <Main
+        projects={data.projects}
+        certificates={data.certifications}
+        skills={data.skills}
+      />
       <Footer />
     </div>
   );
