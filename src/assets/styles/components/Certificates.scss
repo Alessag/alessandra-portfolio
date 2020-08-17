@@ -5,63 +5,38 @@
   background-color: $color-black;
   border: 1px solid $color-purple;
 }
-a {
-  text-decoration: none;
-  color: $color-purple;
-  &:hover {
+
+.card-body__title {
+  margin-bottom: 0;
+}
+
+.card-body__date {
+  margin-bottom: 2em;
+}
+
+.certificates-content__title {
+  text-transform: uppercase;
+  font-weight: bolder;
+  letter-spacing: 0.1em;
+}
+
+.fill {
+  text-transform: uppercase;
+  background: none;
+  border: 2px solid;
+  line-height: 1;
+  padding: 0.8em 2em;
+  color: $buttoncolor;
+  transition: all 0.3s cubic-bezier(0.65, 0.05, 0.36, 1);
+  &:hover,
+  &:focus {
+    border-color: #{adjust-hue($color-purple, 10%)};
+    color: $color-white;
     text-decoration: none;
-    color: $color-gray;
   }
 }
-.card-body__btn {
-  position: relative;
-  margin: auto;
-  padding: 19px 22px;
-  transition: all 0.2s ease;
-  background-color: transparent;
-  &:before {
-    content: '';
-    position: absolute;
-    top: 0;
-    left: 0;
-    display: block;
-    border-radius: 28px;
-    background: rgba($color-purple, 0.5);
-    width: 56px;
-    height: 56px;
-    transition: all 0.3s ease;
-  }
-  span {
-    position: relative;
-    font-size: 16px;
-    line-height: 18px;
-    font-weight: 900;
-    letter-spacing: 0.25em;
-    text-transform: uppercase;
-    vertical-align: middle;
-  }
-  sv {
-    position: relative;
-    top: 0;
-    margin-left: 10px;
-    fill: none;
-    stroke-linecap: round;
-    stroke-linecap: round;
-    stroke: $color-green;
-    stroke-width: 2;
-    transform: translateX(-5px);
-    transition: all 0.3s ease;
-  }
-  &:hover {
-    &:before {
-      width: 100%;
-      background: rgba($color-purple, 1);
-    }
-    svg {
-      transform: translateX(0);
-    }
-  }
-  &:active {
-    transform: scale(0.96);
-  }
+
+.fill:hover,
+.fill:focus {
+  box-shadow: inset 0 0 0 2em #{adjust-hue($color-purple, 10%)};
 }

@@ -1,0 +1,16 @@
+@import '../main.scss';
+
+.card {
+  height: 100%;
+  background-color: $color-black;
+  border: 1px solid $color-purple;
+}
+
+.projects-content__title {
+  text-transform: uppercase;
+  font-weight: bolder;
+  letter-spacing: 0.1em;
+}
+.project-image {
+  height: 500px;
+}
