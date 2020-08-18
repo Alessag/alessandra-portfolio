@@ -1,0 +1,16 @@
+@import '../main.scss';
+
+.info-container {
+  margin: 1em auto;
+}
+.title {
+  color: $color-green;
+  text-transform: uppercase;
+  font-weight: bold;
+  margin-bottom: 1em;
+}
+
+.sub-title {
+  font-weight: bold;
+  margin-bottom: 0.5em;
+}
