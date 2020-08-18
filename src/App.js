@@ -6,7 +6,7 @@ import Footer from './components/Footer';
 const App = () => {
   const data = {
     name: 'Alessandra Amicarella',
-    image: 'url image',
+    image: './assets/images/alessandra.jpg',
     skills: [
       {
         id: '1',
@@ -261,8 +261,6 @@ const App = () => {
       },
     ],
   };
-
-  // console.log(data);
 
   return (
     <div>
