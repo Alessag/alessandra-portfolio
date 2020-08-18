@@ -1,4 +1,3 @@
-import React from 'react';
 import '../assets/styles/main.scss';
 import styled from '@emotion/styled';
 
