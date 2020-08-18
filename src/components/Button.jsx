@@ -18,6 +18,13 @@ export const Button = styled.a`
   }
 `;
 
-export const column = styled.div`
-  background: red;
+export const PrimaryButton = styled(Button)`
+  text-transform: capitalize;
+  padding: 0;
+  border: none;
+  &:hover,
+  &:focus {
+    border-color: transparent;
+    box-shadow: none;
+  }
 `;
