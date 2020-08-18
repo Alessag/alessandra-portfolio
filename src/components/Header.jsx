@@ -1,31 +1,39 @@
-import React from 'react';
+import React, { useState } from 'react';
 import '../assets/styles/components/Header.scss';
+import {
+  Collapse,
+  Navbar,
+  NavbarToggler,
+  NavbarBrand,
+  Nav,
+  NavItem,
+} from 'reactstrap';
 import { Link } from 'react-router-dom';
 
-function Header() {
+const Header = () => {
+  const [isOpen, setIsOpen] = useState(false);
+  const toggle = () => setIsOpen(!isOpen);
   return (
-    <header className='header'>
-      <div className='menu container-fluid'>
-        <div className='menu__logo'>
-          <img className='menu__logo-img' alt='Logo' />
-        </div>
-
-        <nav className='navbar'>
-          <ul>
-            <li>
+    <div>
+      <Navbar color='light' light expand='md'>
+        <NavbarBrand href='/'>Alessandra</NavbarBrand>
+        <NavbarToggler onClick={toggle} />
+        <Collapse isOpen={isOpen} navbar>
+          <Nav className='mr-auto' navbar>
+            <NavItem>
               <Link to='/'>Home</Link>
-            </li>
-            <li>
+            </NavItem>
+            <NavItem>
               <Link to='/about'>About</Link>
-            </li>
-            <li>
+            </NavItem>
+            <NavItem>
               <Link to='/contact'>Contact</Link>
-            </li>
-          </ul>
-        </nav>
-      </div>
-    </header>
+            </NavItem>
+          </Nav>
+        </Collapse>
+      </Navbar>
+    </div>
   );
-}
+};
 
 export default Header;
