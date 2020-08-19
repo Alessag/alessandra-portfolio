@@ -8,12 +8,9 @@ const Info = () => {
   return (
     <Container className='info-container'>
       <Row>
-        <Col>
-          <h1 className='title'>
-            Alessandra <br />
-            Amicarella
-          </h1>
-          <h2 className='sub-title'>Front End Developer</h2>
+        <Col sm='12' md='6' className='info-container__text'>
+          <h3 className='sub-title'>Alessandra Amicarella</h3>
+          <h1 className='title '>Front End Developer</h1>
           <p className='text'>
             I am a computer engineering student, I am passionate about the
             digital world and discover new techs. Actually I am making inroads
@@ -23,7 +20,7 @@ const Info = () => {
           or{' '}
           <PrimaryButton href='https://google.com'>Read About Me</PrimaryButton>
         </Col>
-        <Col>
+        <Col sm='12' md='6' className='info-container__img'>
           {/* <div className='triangle' /> */}
           <img src={AlePhoto} className='img-fluid' alt='Alessandra' />
         </Col>
