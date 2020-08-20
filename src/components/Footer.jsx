@@ -32,8 +32,7 @@ const Footer = () => {
       </div>
       <div className='text-center footer__text'>
         <p>
-          Made with <AiFillHeart color='#54ecc4' /> in San Cristóbal, Venezuela{' '}
-          <br />
+          Made with <AiFillHeart color='#54ecc4' /> in Venezuela <br />
           2020 <AiOutlineCopyrightCircle /> Alessandra Amicarella
         </p>
       </div>
