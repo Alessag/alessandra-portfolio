@@ -6,6 +6,10 @@
   border: 1px solid $color-purple;
 }
 
+.projects-content__card {
+  margin: 1em auto;
+}
+
 .projects-content__title {
   text-transform: uppercase;
   font-weight: bolder;
@@ -13,4 +17,12 @@
 }
 .project-image {
   height: 500px;
+}
+
+@media screen and (max-width: 575.98px) {
+  .projects-content__title {
+    text-align: center;
+    font-size: 1em;
+    margin: 2em auto;
+  }
 }
