@@ -5,12 +5,34 @@
 }
 .title {
   color: $color-green;
+  font-size: 4em;
   text-transform: uppercase;
   font-weight: bold;
-  margin-bottom: 1em;
+  margin-bottom: 0.3em;
 }
 
 .sub-title {
-  font-weight: bold;
-  margin-bottom: 0.5em;
+  margin-bottom: 3px;
+}
+
+.info-container__img,
+.info-container__text {
+  align-self: center;
+}
+
+@media screen and (max-width: 991.98px) {
+  .title {
+    font-size: 3em;
+  }
+}
+
+@media screen and (max-width: 767.98px) {
+  .info-container__text {
+    text-align: center;
+    order: 2;
+  }
+  .info-container__img {
+    order: 1;
+    margin-bottom: 1em;
+  }
 }
