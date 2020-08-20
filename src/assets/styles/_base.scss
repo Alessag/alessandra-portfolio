@@ -33,3 +33,11 @@ $buttonbordercolor: currentcolor;
 $buttoncolor: $color-purple;
 $buttonborderwidth: 1px;
 $buttonborderstyle: solid;
+
+/*------------------------------------*\
+    $BREAKPOINTS
+\*------------------------------------*/
+
+$break-tablet: 991.98px;
+$break-phone: 767.98px;
+$break-portrait: 575.98px;

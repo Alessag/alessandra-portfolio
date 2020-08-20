@@ -19,10 +19,9 @@
   height: 500px;
 }
 
-@media screen and (max-width: 575.98px) {
+@media screen and (max-width: $break-portrait) {
   .projects-content__title {
     text-align: center;
     font-size: 1em;
-    margin: 2em auto;
   }
 }

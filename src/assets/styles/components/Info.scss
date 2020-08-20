@@ -20,13 +20,13 @@
   align-self: center;
 }
 
-@media screen and (max-width: 991.98px) {
+@media screen and (max-width: $break-tablet) {
   .title {
     font-size: 3em;
   }
 }
 
-@media screen and (max-width: 767.98px) {
+@media screen and (max-width: $break-phone) {
   .info-container__text {
     text-align: center;
     order: 2;
@@ -34,5 +34,11 @@
   .info-container__img {
     order: 1;
     margin-bottom: 1em;
+  }
+}
+
+@media screen and (max-width: $break-portrait) {
+  .title {
+    font-size: 2em;
   }
 }
