@@ -1,42 +1,26 @@
 @import '../main.scss';
 
-.card {
-  height: 100%;
-  background-color: $color-black;
-  border: 1px solid $color-purple;
-}
-
-.card-body__title {
-  margin-bottom: 0;
-}
-
-.card-body__date {
-  margin-bottom: 2em;
-}
-
-.certificates-content__title {
-  text-transform: uppercase;
-  font-weight: bolder;
-  letter-spacing: 0.1em;
-}
-
-.fill {
-  text-transform: uppercase;
-  background: none;
-  border: 2px solid;
-  line-height: 1;
-  padding: 0.8em 2em;
-  color: $buttoncolor;
-  transition: all 0.3s cubic-bezier(0.65, 0.05, 0.36, 1);
-  &:hover,
-  &:focus {
-    border-color: #{adjust-hue($color-purple, 10%)};
-    color: $color-white;
-    text-decoration: none;
+.certificates {
+  margin: 2em auto;
+  .certificates__title {
+    text-transform: uppercase;
+    font-weight: bolder;
+    letter-spacing: 0.1em;
   }
-}
+  .certificates__card {
+    margin: 1em auto;
+    .card {
+      height: 100%;
+      background-color: $color-black;
+      border: 1px solid $color-purple;
+      padding-bottom: 1.5em;
+      .card-body__title {
+        margin-bottom: 0;
+      }
 
-.fill:hover,
-.fill:focus {
-  box-shadow: inset 0 0 0 2em #{adjust-hue($color-purple, 10%)};
+      .card-body__date {
+        margin-bottom: 2em;
+      }
+    }
+  }
 }
