@@ -21,7 +21,6 @@ const Info = () => {
           <PrimaryButton href='https://google.com'>Read About Me</PrimaryButton>
         </Col>
         <Col sm='12' md='6' className='info-container__img'>
-          {/* <div className='triangle' /> */}
           <img src={AlePhoto} className='img-fluid' alt='Alessandra' />
         </Col>
       </Row>
