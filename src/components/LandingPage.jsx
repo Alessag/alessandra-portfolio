@@ -1,11 +1,12 @@
 import React from 'react';
 import PropTypes from 'prop-types';
+import Info from './Info';
 import Projects from './Projects';
 
 function LandingPage({ projects }) {
   return (
     <div>
-      <h1>I am the Home Page</h1>
+      <Info />
       <Projects projects={projects} />
     </div>
   );
