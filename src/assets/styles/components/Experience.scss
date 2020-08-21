@@ -1,8 +1,14 @@
 @import '../main.scss';
 
-img::before {
-  content: '';
-  width: 30px;
-  height: 30px;
-  background-color: red;
+.experience {
+  .experience__title {
+    text-transform: uppercase;
+    font-weight: bold;
+  }
+}
+.experience__info {
+  padding-bottom: 2em;
+  img {
+    margin-bottom: 2em;
+  }
 }
