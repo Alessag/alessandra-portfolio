@@ -3,15 +3,41 @@
 .header {
   background-color: $color-black;
   color: $color-gray;
-  a {
-    color: $color-gray;
-    text-decoration: none;
-    font-weight: bold;
-    margin-right: 5em;
-    text-transform: uppercase;
-    &:hover {
-      color: $color-purple;
-      cursor: pointer;
+  // border: 1px solid red;
+  padding-top: 1em;
+  .header-nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    ul {
+      display: flex;
+      flex-direction: row;
+      li {
+        list-style: none;
+        margin: auto 3em;
+        a {
+          padding: 0;
+          border: none;
+          text-transform: uppercase;
+          background: none;
+          line-height: 1;
+          color: #8083ff;
+          transition: all 0.3s cubic-bezier(0.65, 0.05, 0.36, 1);
+          &:hover,
+          &:focus {
+            border-color: transparent;
+            box-shadow: none;
+            color: white;
+            text-decoration: none;
+          }
+        }
+      }
     }
+  }
+}
+
+@media screen and (max-width: $break-portrait) {
+  .header {
+    background-color: $color-green;
   }
 }
