@@ -3,7 +3,7 @@ import PropTypes from 'prop-types';
 import { Card, CardImg, CardBody, Container, Row, Col } from 'reactstrap';
 import { Button } from './Button';
 import '../assets/styles/components/Certificates.scss';
-import cover from '../assets/images/fcc-js.png';
+import cover from '../assets/images/certificates/platzi-github.png';
 
 const Certificates = ({ certificates }) => (
   <Container className='certificates'>
