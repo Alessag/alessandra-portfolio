@@ -1,13 +1,13 @@
 import React from 'react';
 import { Container } from 'reactstrap';
 import {
-  AiOutlineMail,
   AiOutlineInstagram,
   AiFillLinkedin,
   AiFillGithub,
   AiFillHeart,
   AiOutlineCopyrightCircle,
 } from 'react-icons/ai';
+import { FaTelegramPlane } from 'react-icons/fa';
 import '../assets/styles/components/Footer.scss';
 
 const Footer = () => {
@@ -17,13 +17,13 @@ const Footer = () => {
       <div>
         <ul className='footer__social-links'>
           <li>
-            <a href='mailto:alessamica@gmail.com'>
-              <AiOutlineMail size='1.3rem' color='white' className='icons' />
+            <a href='https://www.linkedin.com/in/AlessandraAmicarella/'>
+              <AiFillLinkedin size='1.3rem' color='white' className='icons' />
             </a>
           </li>
           <li>
-            <a href='https://www.linkedin.com/in/AlessandraAmicarella/'>
-              <AiFillLinkedin size='1.3rem' color='white' className='icons' />
+            <a href='https://t.me/Alessamica'>
+              <FaTelegramPlane size='1.3rem' color='white' className='icons' />
             </a>
           </li>
           <li>
