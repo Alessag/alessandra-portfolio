@@ -5,6 +5,7 @@
   justify-content: center;
   align-items: center;
   flex-direction: column;
+  margin-top: 2em;
   .divider {
     width: calc(100% / 2);
     height: 1px;
@@ -49,7 +50,7 @@
         padding: 0.5rem;
         list-style: none;
         margin: 1em;
-        svg {
+        .icons {
           width: 1em;
           height: 1em;
         }
