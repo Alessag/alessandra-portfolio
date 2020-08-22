@@ -17,16 +17,28 @@ const Footer = () => {
       <div>
         <ul className='footer__social-links'>
           <li>
-            <AiOutlineMail size='1.5rem' color='white' />
+            <a href='mailto:alessamica@gmail.com'>
+              <AiOutlineMail size='1.3rem' color='white' className='icons' />
+            </a>
           </li>
           <li>
-            <AiOutlineInstagram size='1.3rem' color='white' />
+            <a href='https://www.linkedin.com/in/AlessandraAmicarella/'>
+              <AiFillLinkedin size='1.3rem' color='white' className='icons' />
+            </a>
           </li>
           <li>
-            <AiFillLinkedin size='1.3rem' color='white' />
+            <a href='https://github.com/alessag'>
+              <AiFillGithub size='1.3rem' color='white' className='icons' />
+            </a>
           </li>
           <li>
-            <AiFillGithub size='1.3rem' color='white' />
+            <a href='https://instagram.com/amicarellaa'>
+              <AiOutlineInstagram
+                size='1.3rem'
+                color='white'
+                className='icons'
+              />
+            </a>
           </li>
         </ul>
       </div>
