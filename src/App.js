@@ -192,7 +192,7 @@ const App = () => {
       {
         id: '5',
         title: 'Calculator',
-        url: 'https://drum-machine-2f986.web.app/',
+        url: 'https://react-calculator-fecaf.web.app/',
         img: 'calculator.png',
         date: '2020',
         description: 'Short description about the project',
@@ -200,7 +200,7 @@ const App = () => {
       {
         id: '6',
         title: 'Pomodoro Clock',
-        url: 'https://drum-machine-2f986.web.app/',
+        url: 'https://pomodoro-clock-35364.web.app/',
         img: 'pomodoroClock.png',
         date: '2020',
         description: 'Short description about the project',
@@ -208,7 +208,7 @@ const App = () => {
       {
         id: '7',
         title: 'Amura',
-        url: 'https://drum-machine-2f986.web.app/',
+        url: 'https://alessag.gitlab.io/Amura/',
         img: 'amura.png',
         date: '2020',
         description: 'Short description about the project',
@@ -216,7 +216,7 @@ const App = () => {
       {
         id: '8',
         title: 'Platzi Palooza',
-        url: 'https://drum-machine-2f986.web.app/',
+        url: 'https://alessag.github.io/platzi-palooza/',
         img: 'platziPalooza.png',
         date: '2020',
         description: 'Short description about the project',
@@ -224,7 +224,7 @@ const App = () => {
       {
         id: '9',
         title: 'Trombone',
-        url: 'https://drum-machine-2f986.web.app/',
+        url: 'https://alessag.github.io/Trombone/',
         img: 'trombone.png',
         date: '2020',
         description: 'Short description about the project',
@@ -232,7 +232,7 @@ const App = () => {
       {
         id: '10',
         title: 'Instagram Layout',
-        url: 'https://drum-machine-2f986.web.app/',
+        url: 'https://alessag.github.io/Instagram-Layout/',
         img: 'instagramLayout.png',
         date: '2020',
         description: 'Short description about the project',
@@ -240,7 +240,7 @@ const App = () => {
       {
         id: '11',
         title: 'Google Clone',
-        url: 'https://drum-machine-2f986.web.app/',
+        url: 'https://alessag.gitlab.io/google-clone/',
         img: 'googleClone.png',
         date: '2020',
         description: 'Short description about the project',
@@ -248,7 +248,7 @@ const App = () => {
       {
         id: '12',
         title: 'Survey Form',
-        url: 'https://drum-machine-2f986.web.app/',
+        url: 'https://alessag.github.io/Survey-Form/',
         img: 'surveyForm.png',
         date: '2020',
         description: 'Short description about the project',
