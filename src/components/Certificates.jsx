@@ -1,9 +1,10 @@
+/* eslint-disable import/no-dynamic-require */
+/* eslint-disable global-require */
 import React from 'react';
 import PropTypes from 'prop-types';
 import { Card, CardImg, CardBody, Container, Row, Col } from 'reactstrap';
 import { Button } from './Button';
 import '../assets/styles/components/Certificates.scss';
-import cover from '../assets/images/certificates/platzi-github.png';
 
 const Certificates = ({ certificates }) => (
   <Container className='certificates'>
@@ -13,10 +14,10 @@ const Certificates = ({ certificates }) => (
         <Col key={item.id} md='6' lg='4' className='certificates__card'>
           <Card className='card'>
             <CardImg
+              src={require(`../assets/images/certificates/${item.img}`)}
               top
               width='100%'
               className='img-fluid'
-              src={cover}
               alt='certificate'
             />
             <CardBody>
