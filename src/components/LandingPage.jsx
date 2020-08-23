@@ -13,7 +13,7 @@ function LandingPage({ projects }) {
 }
 
 LandingPage.propTypes = {
-  projects: PropTypes.node.isRequired,
+  projects: PropTypes.array.isRequired,
 };
 
 export default LandingPage;

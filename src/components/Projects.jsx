@@ -29,7 +29,7 @@ const Projects = ({ projects }) => {
 };
 
 Projects.propTypes = {
-  projects: PropTypes.node.isRequired,
+  projects: PropTypes.array.isRequired,
 };
 
 export default Projects;
