@@ -30,6 +30,12 @@
       {
         "varsIgnorePattern": "React"
       }
+    ],
+    "react/forbid-prop-types": [
+      "off",
+      {
+        "forbid": ["any", "array", "object"]
+      }
     ]
   }
 }
