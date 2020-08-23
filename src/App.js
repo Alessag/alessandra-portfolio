@@ -61,7 +61,7 @@ const App = () => {
         id: '1',
         url:
           'https://www.freecodecamp.org/certification/alessag/front-end-libraries',
-        image: './assets/images/01.png',
+        img: 'front-end-libraries-certification.png',
         academy: 'FreeCodeCamp',
         title: 'Front End Libraries',
         date: 'July, 2020',
@@ -71,7 +71,8 @@ const App = () => {
         id: '2',
         url:
           'https://www.freecodecamp.org/certification/alessag/javascript-algorithms-and-data-structures',
-        image: 'url de la imagen',
+        img:
+          'javaScript-algorithms-and-data-structures-developer-certification.png',
         academy: 'FreeCodeCamp',
         title: 'JavaScript Algorithms and Data Structures',
         date: 'May,  2020',
@@ -81,7 +82,7 @@ const App = () => {
         id: '3',
         url:
           'https://www.freecodecamp.org/certification/alessag/responsive-web-design',
-        image: 'url de la imagen',
+        img: 'responsive-web-desing-certification.png',
         academy: 'FreeCodeCamp',
         title: 'Responsive Web Design',
         date: 'April, 2020',
@@ -91,7 +92,7 @@ const App = () => {
         id: '4',
         url:
           'https://platzi.com/@Alessandrag/curso/1170-git-github-2017-old/diploma/detalle/',
-        image: 'url de la imagen',
+        img: 'diploma-git-github-2017-old-1.png',
         academy: 'Platzi',
         title: 'Curso Profesional de Git y Github',
         date: 'July, 2018',
@@ -101,7 +102,7 @@ const App = () => {
         id: '5',
         url:
           'https://platzi.com/@Alessandrag/curso/1054-fw-frontend-2016/diploma/detalle/',
-        image: 'url de la imagen',
+        img: 'diploma-fw-frontend-2016-1.png',
         academy: 'Platzi',
         title: 'Curso de Frontend con Bootstrap y Foundation',
         date: 'December, 2017',
@@ -110,7 +111,7 @@ const App = () => {
       {
         id: '6',
         url: 'https://platzi.com/@Alessandrag/curso/1244-sass/diploma/detalle/',
-        image: 'url de la imagen',
+        img: 'diploma-sass-1.png',
         academy: 'Platzi',
         title: 'Curso de Sass',
         date: 'May, 2018',
@@ -120,7 +121,7 @@ const App = () => {
         id: '7',
         url:
           'https://platzi.com/@Alessandrag/curso/1034-html5-css3-2016/diploma/detalle/',
-        image: 'url de la imagen',
+        img: 'diploma-html5-css3-2016-1.png',
         academy: 'Platzi',
         title: 'Curso de Desarrollo Web Online',
         date: 'Agust, 2017',
@@ -130,7 +131,7 @@ const App = () => {
         id: '8',
         url:
           'https://platzi.com/@Alessandrag/curso/1103-animaciones-web/diploma/detalle/',
-        image: 'url de la imagen',
+        img: 'diploma-animaciones-web-1.png',
         academy: 'Platzi',
         title: 'Curso de Animaciones para la Web',
         date: 'May, 2018',
@@ -140,7 +141,7 @@ const App = () => {
         id: '9',
         url:
           'https://platzi.com/@Alessandrag/curso/1050-programacion-basica/diploma/detalle/',
-        image: 'url de la imagen',
+        img: 'diploma-programacion-basica-1.png',
         academy: 'Platzi',
         title: 'Curso de Programación Básica',
         date: 'May, 2017',
@@ -149,7 +150,7 @@ const App = () => {
       {
         id: '10',
         url: 'hola',
-        image: 'url de la imagen',
+        img: 'diploma-fundamentos-javascript-2017-1.png',
         academy: 'Platzi',
         title: 'Curso de Fundamentos de JavaScript',
         date: 'July, 2017',
