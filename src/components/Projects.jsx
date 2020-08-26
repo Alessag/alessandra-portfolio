@@ -2,8 +2,9 @@
 /* eslint-disable global-require */
 import React from 'react';
 import PropTypes from 'prop-types';
-import { Container, Row, Col } from 'reactstrap';
+import { Container, Row, Col, Badge } from 'reactstrap';
 import '../assets/styles/components/Projects.scss';
+import { PrimaryButton } from './Button';
 
 const Projects = ({ projects }) => {
   return (
@@ -23,6 +24,29 @@ const Projects = ({ projects }) => {
               <div className='details'>
                 <h2>{item.title}</h2>
                 <p>{item.description}</p>
+                <div className='tech-badge'>
+                  {item.tech.map((subitem) => (
+                    <Badge key={subitem} color='light'>
+                      {subitem}
+                    </Badge>
+                  ))}
+                </div>
+                <div className='details__buttons'>
+                  <PrimaryButton
+                    href={item.url}
+                    target='_blank'
+                    className='card-button'
+                  >
+                    Demo
+                  </PrimaryButton>
+                  <PrimaryButton
+                    href={item.repo}
+                    target='_blank'
+                    className='card-button'
+                  >
+                    Code
+                  </PrimaryButton>
+                </div>
               </div>
             </div>
           </Col>
