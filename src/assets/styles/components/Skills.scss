@@ -1,0 +1,22 @@
+@import '../main.scss';
+
+.skills {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  column-gap: 1em;
+  [class$='-container'] {
+    p {
+      margin: 0;
+    }
+    [class$='-stars-wrapper'] {
+      [class^='2'] {
+        transform: scaleX(-1);
+      }
+      img {
+        width: 1em;
+        height: 1em;
+        margin-right: 2px;
+      }
+    }
+  }
+}
