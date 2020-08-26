@@ -12,15 +12,19 @@ const Projects = ({ projects }) => {
       <Row className='justify-content-center'>
         {projects.map((item) => (
           <Col key={item.id} md='6' lg='4' className='projects-content__card'>
-            <img
-              src={require(`../assets/images/projects/${item.img}`)}
-              className='img-fluid project-image'
-              alt={item.title}
-            />
-            <h3>{item.title}</h3>
-            {/* <p>{item.tecnologies}</p> */}
-            <a href={item.url}>Demo</a>
-            <a href={item.url}>Code</a>
+            <div className='card'>
+              <div className='imgBx'>
+                <img
+                  src={require(`../assets/images/projects/${item.img}`)}
+                  className='img-fluid project-image'
+                  alt={item.title}
+                />
+              </div>
+              <div className='details'>
+                <h2>{item.title}</h2>
+                <p>{item.description}</p>
+              </div>
+            </div>
           </Col>
         ))}
       </Row>
