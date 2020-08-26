@@ -1,14 +1,32 @@
+/* eslint-disable react/no-array-index-key */
+/* eslint-disable import/no-dynamic-require */
+/* eslint-disable global-require */
 import React from 'react';
 import PropTypes from 'prop-types';
-// import { BsStarFill, BsStarHalf, BsStar } from 'react-icons/bs';
+import '../assets/styles/components/Skills.scss';
 
 const Skills = ({ skills }) => {
   return (
-    <div>
-      <h1>Hiii</h1>
-      {skills.map((item) => (
-        <p>{item.name}</p>
-      ))}
+    <div className='skills'>
+      {skills.map((item) => {
+        return (
+          <div key={item.id} className={`${item.name}-container`}>
+            <p>{item.name}</p>
+            <div className={`${item.name}-stars-wrapper`}>
+              {item.stars.map((subitem, index) => {
+                return (
+                  <img
+                    key={index}
+                    src={require(`../assets/images/icons/${subitem}`)}
+                    className={subitem}
+                    alt={item.name}
+                  />
+                );
+              })}
+            </div>
+          </div>
+        );
+      })}
     </div>
   );
 };
