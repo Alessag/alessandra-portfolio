@@ -165,6 +165,7 @@ const App = () => {
         img: 'aboutItaly.png',
         date: '2018',
         description: 'Short description about the project',
+        repo: 'https://github.com/Alessag/italy',
         tech: ['HTML5', 'CSS3', 'Bootstrap', 'Git'],
       },
       {
@@ -173,7 +174,9 @@ const App = () => {
         url: 'https://upbeat-goldwasser-67096c.netlify.app/',
         img: 'randomeQuoteMachine.png',
         date: '2020',
-        description: 'Short description about the project',
+        description:
+          'Short description about the project Short description about the project Short description about the project',
+        repo: 'https://github.com/Alessag/random-quote-machine',
         tech: ['HTML5', 'CSS3', 'React', 'Material UI', 'Git', 'Netlify'],
       },
       {
@@ -183,6 +186,7 @@ const App = () => {
         img: 'markdownEditor.png',
         date: '2020',
         description: 'Short description about the project',
+        repo: 'https://github.com/Alessag/markdown-editor',
         tech: ['HTML5', 'CSS3', 'React', 'Emotion', 'Git', 'Firebase'],
       },
       {
@@ -192,6 +196,7 @@ const App = () => {
         img: 'drumPad.png',
         date: '2020',
         description: 'Short description about the project',
+        repo: 'https://github.com/Alessag/drum-machine',
         tech: ['HTML5', 'CSS3', 'React', 'Git', 'Firebase'],
       },
       {
@@ -201,6 +206,7 @@ const App = () => {
         img: 'calculator.png',
         date: '2020',
         description: 'Short description about the project',
+        repo: 'https://github.com/Alessag/react-calculator',
         tech: ['HTML5', 'CSS3', 'React', 'Firebase'],
       },
       {
@@ -210,6 +216,7 @@ const App = () => {
         img: 'pomodoroClock.png',
         date: '2020',
         description: 'Short description about the project',
+        repo: 'https://github.com/Alessag/pomodoro-clock',
         tech: ['HTML5', 'CSS3', 'React', 'Tailwindcss', 'Git', 'Firebase'],
       },
       {
@@ -219,6 +226,7 @@ const App = () => {
         img: 'amura.png',
         date: '2020',
         description: 'Short description about the project',
+        repo: 'https://github.com/Alessag/Amura',
         tech: ['HTML5', 'CSS3', 'Bootstrap', 'Git'],
       },
       {
@@ -228,6 +236,7 @@ const App = () => {
         img: 'platziPalooza.png',
         date: '2020',
         description: 'Short description about the project',
+        repo: 'https://github.com/Alessag/platzi-palooza',
         tech: ['HTML5', 'CSS3', 'Foundation', 'Git'],
       },
       {
@@ -237,6 +246,7 @@ const App = () => {
         img: 'trombone.png',
         date: '2020',
         description: 'Short description about the project',
+        repo: 'https://github.com/Alessag/Trombone',
         tech: ['HTML5', 'CSS3', 'Git'],
       },
       {
@@ -246,6 +256,7 @@ const App = () => {
         img: 'instagramLayout.png',
         date: '2020',
         description: 'Short description about the project',
+        repo: 'https://github.com/Alessag/Instagram-Layout',
         tech: ['HTML5', 'CSS3', 'CSS Grid', 'Git'],
       },
       {
@@ -255,6 +266,7 @@ const App = () => {
         img: 'googleClone.png',
         date: '2020',
         description: 'Short description about the project',
+        repo: 'https://github.com/Alessag/google-clone',
         tech: ['HTML5', 'CSS3', 'Git'],
       },
       {
@@ -264,6 +276,7 @@ const App = () => {
         img: 'surveyForm.png',
         date: '2020',
         description: 'Short description about the project',
+        repo: 'https://github.com/Alessag/Survey-Form',
         tech: ['HTML5', 'CSS3', 'CSS Grid', 'Git'],
       },
     ],
