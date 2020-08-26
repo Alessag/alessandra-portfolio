@@ -165,6 +165,7 @@ const App = () => {
         img: 'aboutItaly.png',
         date: '2018',
         description: 'Short description about the project',
+        tech: ['HTML5', 'CSS3', 'Bootstrap', 'Git'],
       },
       {
         id: '2',
@@ -173,6 +174,7 @@ const App = () => {
         img: 'randomeQuoteMachine.png',
         date: '2020',
         description: 'Short description about the project',
+        tech: ['HTML5', 'CSS3', 'React', 'Material UI', 'Git', 'Netlify'],
       },
       {
         id: '3',
@@ -181,6 +183,7 @@ const App = () => {
         img: 'markdownEditor.png',
         date: '2020',
         description: 'Short description about the project',
+        tech: ['HTML5', 'CSS3', 'React', 'Emotion', 'Git', 'Firebase'],
       },
       {
         id: '4',
@@ -189,6 +192,7 @@ const App = () => {
         img: 'drumPad.png',
         date: '2020',
         description: 'Short description about the project',
+        tech: ['HTML5', 'CSS3', 'React', 'Git', 'Firebase'],
       },
       {
         id: '5',
@@ -197,6 +201,7 @@ const App = () => {
         img: 'calculator.png',
         date: '2020',
         description: 'Short description about the project',
+        tech: ['HTML5', 'CSS3', 'React', 'Firebase'],
       },
       {
         id: '6',
@@ -205,6 +210,7 @@ const App = () => {
         img: 'pomodoroClock.png',
         date: '2020',
         description: 'Short description about the project',
+        tech: ['HTML5', 'CSS3', 'React', 'Tailwindcss', 'Git', 'Firebase'],
       },
       {
         id: '7',
@@ -213,6 +219,7 @@ const App = () => {
         img: 'amura.png',
         date: '2020',
         description: 'Short description about the project',
+        tech: ['HTML5', 'CSS3', 'Bootstrap', 'Git'],
       },
       {
         id: '8',
@@ -221,6 +228,7 @@ const App = () => {
         img: 'platziPalooza.png',
         date: '2020',
         description: 'Short description about the project',
+        tech: ['HTML5', 'CSS3', 'Foundation', 'Git'],
       },
       {
         id: '9',
@@ -229,6 +237,7 @@ const App = () => {
         img: 'trombone.png',
         date: '2020',
         description: 'Short description about the project',
+        tech: ['HTML5', 'CSS3', 'Git'],
       },
       {
         id: '10',
@@ -237,6 +246,7 @@ const App = () => {
         img: 'instagramLayout.png',
         date: '2020',
         description: 'Short description about the project',
+        tech: ['HTML5', 'CSS3', 'CSS Grid', 'Git'],
       },
       {
         id: '11',
@@ -245,6 +255,7 @@ const App = () => {
         img: 'googleClone.png',
         date: '2020',
         description: 'Short description about the project',
+        tech: ['HTML5', 'CSS3', 'Git'],
       },
       {
         id: '12',
@@ -253,6 +264,7 @@ const App = () => {
         img: 'surveyForm.png',
         date: '2020',
         description: 'Short description about the project',
+        tech: ['HTML5', 'CSS3', 'CSS Grid', 'Git'],
       },
     ],
   };
