@@ -13,47 +13,47 @@ const App = () => {
       {
         id: '1',
         name: 'HTML5',
-        stars: [1, 1, 1, 1, 2],
+        stars: ['1.svg', '1.svg', '1.svg', '1.svg', '2.svg'],
       },
       {
         id: '2',
         name: 'JavaScript',
-        stars: [1, 1, 2, 3, 3],
+        stars: ['1.svg', '1.svg', '2.svg', '3.svg', '3.svg'],
       },
       {
         id: '3',
         name: 'Sass',
-        stars: [1, 1, 1, 2, 3],
+        stars: ['1.svg', '1.svg', '1.svg', '2.svg', '3.svg'],
       },
       {
         id: '4',
-        name: 'CSS3',
-        stars: [1, 1, 1, 1, 2],
+        name: 'CSS',
+        stars: ['1.svg', '1.svg', '1.svg', '1.svg', '2.svg'],
       },
       {
         id: '5',
         name: 'React',
-        stars: [1, 1, 2, 3, 3],
+        stars: ['1.svg', '1.svg', '2.svg', '3.svg', '3.svg'],
       },
       {
         id: '6',
         name: 'Bootstrap',
-        stars: [1, 1, 1, 1, 2],
+        stars: ['1.svg', '1.svg', '1.svg', '1.svg', '2.svg'],
       },
       {
         id: '7',
         name: 'Responsive Design',
-        stars: [1, 1, 1, 1, 3],
+        stars: ['1.svg', '1.svg', '1.svg', '1.svg', '3.svg'],
       },
       {
         id: '8',
         name: 'Git/Github',
-        stars: [1, 1, 1, 2, 3],
+        stars: ['1.svg', '1.svg', '1.svg', '2.svg', '3.svg'],
       },
       {
         id: '9',
         name: 'Material UI',
-        stars: [1, 1, 1, 2, 3],
+        stars: ['1.svg', '1.svg', '1.svg', '2.svg', '3.svg'],
       },
     ],
     certifications: [
