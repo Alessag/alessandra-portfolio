@@ -33,7 +33,7 @@ const Certificates = ({ certificates }) => (
 );
 
 Certificates.propTypes = {
-  certificates: PropTypes.node.isRequired,
+  certificates: PropTypes.array.isRequired,
 };
 
 export default Certificates;
