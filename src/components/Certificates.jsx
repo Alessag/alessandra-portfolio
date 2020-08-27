@@ -22,8 +22,10 @@ const Certificates = ({ certificates }) => (
             />
             <CardBody>
               <h4 className='card-body__title'>{item.title}</h4>
-              <h6 className='card-body__date text-muted'>{item.date}</h6>
-              <Button href={item.url}>View certificate</Button>
+              <p className='card-body__date text-muted'>{item.date}</p>
+              <div className='card-body__button'>
+                <Button href={item.url}>View certificate</Button>
+              </div>
             </CardBody>
           </Card>
         </Col>
