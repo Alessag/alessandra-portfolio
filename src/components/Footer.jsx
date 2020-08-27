@@ -17,22 +17,38 @@ const Footer = () => {
       <div>
         <ul className='footer__social-links'>
           <li>
-            <a href='https://www.linkedin.com/in/AlessandraAmicarella/'>
+            <a
+              href='https://www.linkedin.com/in/AlessandraAmicarella/'
+              target='_blank'
+              rel='noopener noreferrer'
+            >
               <AiFillLinkedin size='1.3rem' color='white' className='icons' />
             </a>
           </li>
           <li>
-            <a href='https://t.me/Alessamica'>
+            <a
+              href='https://t.me/Alessamica'
+              target='_blank'
+              rel='noopener noreferrer'
+            >
               <FaTelegramPlane size='1.3rem' color='white' className='icons' />
             </a>
           </li>
           <li>
-            <a href='https://github.com/alessag'>
+            <a
+              href='https://github.com/alessag'
+              target='_blank'
+              rel='noopener noreferrer'
+            >
               <AiFillGithub size='1.3rem' color='white' className='icons' />
             </a>
           </li>
           <li>
-            <a href='https://instagram.com/amicarellaa'>
+            <a
+              href='https://instagram.com/amicarellaa'
+              target='_blank'
+              rel='noopener noreferrer'
+            >
               <AiOutlineInstagram
                 size='1.3rem'
                 color='white'
