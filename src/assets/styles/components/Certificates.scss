@@ -14,12 +14,21 @@
       background-color: $color-black;
       border: 1px solid $color-purple;
       padding-bottom: 1.5em;
+      &:hover {
+        transform: scale(1.1);
+      }
       .card-body__title {
         margin-bottom: 0;
       }
 
       .card-body__date {
+        font-size: 0.9em;
         margin-bottom: 2em;
+      }
+
+      .card-body__button {
+        display: flex;
+        justify-content: center;
       }
     }
   }
