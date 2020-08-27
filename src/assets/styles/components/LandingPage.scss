@@ -2,7 +2,7 @@
 @import url('https://fonts.googleapis.com/css?family=Permanent+Marker');
 
 .cube {
-  margin: auto;
+  margin: 1.5em auto;
   width: 7em;
   height: 7em;
   border: 20px solid transparent;
@@ -19,4 +19,18 @@
   background-repeat: no-repeat;
   background-origin: padding-box, border-box;
   text-align: center;
+}
+
+@media screen and (max-width: $break-tablet) {
+  .cube {
+    font-size: 2.6em;
+    margin: 1em auto;
+  }
+}
+
+@media screen and (max-width: $break-phone) {
+  .cube {
+    font-size: 2em;
+    border: 15px solid transparent;
+  }
 }
