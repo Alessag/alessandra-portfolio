@@ -1,24 +1,44 @@
-import React from 'react';
+import React, { useState } from 'react';
 import '../assets/styles/components/Header.scss';
-import { Container } from 'reactstrap';
 import { Link } from 'react-router-dom';
+import {
+  Collapse,
+  Navbar,
+  NavbarToggler,
+  NavbarBrand,
+  Nav,
+  NavItem,
+  Container,
+} from 'reactstrap';
+import LogoAle from '../assets/images/logo-box.png';
 
 const Header = () => {
+  const [isOpen, setIsOpen] = useState(false);
+
+  const toggle = () => setIsOpen(!isOpen);
+
   return (
     <header className='header'>
-      <Container fluid className='header-nav'>
-        <h4>Ale</h4>
-        <ul>
-          <li>
-            <Link to='/'>Home</Link>
-          </li>
-          <li>
-            <Link to='/about'>About</Link>
-          </li>
-          <li>
-            <Link to='/contact'>Contact</Link>
-          </li>
-        </ul>
+      <Container fluid>
+        <Navbar expand='md'>
+          <NavbarBrand href='/'>
+            <img src={LogoAle} alt='Logo' className='img-fluid logo' />
+          </NavbarBrand>
+          <NavbarToggler onClick={toggle} />
+          <Collapse isOpen={isOpen} navbar className='list-wrapper'>
+            <Nav navbar>
+              <NavItem>
+                <Link to='/'>Home</Link>
+              </NavItem>
+              <NavItem>
+                <Link to='/about'>About</Link>
+              </NavItem>
+              <NavItem>
+                <Link to='/contact'>Contact</Link>
+              </NavItem>
+            </Nav>
+          </Collapse>
+        </Navbar>
       </Container>
     </header>
   );
