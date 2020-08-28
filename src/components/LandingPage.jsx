@@ -8,7 +8,7 @@ import '../assets/styles/components/LandingPage.scss';
 function LandingPage({ projects }) {
   return (
     <div className='home-page'>
-      <Container>
+      <Container className='home-container'>
         <div className='cube'>Front End Developer</div>
       </Container>
       <Info />
