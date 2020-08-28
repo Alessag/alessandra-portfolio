@@ -20,7 +20,7 @@ const Header = () => {
   return (
     <header className='header'>
       <Container fluid>
-        <Navbar expand='md'>
+        <Navbar expand='md' dark>
           <NavbarBrand href='/'>
             <img src={LogoAle} alt='Logo' className='img-fluid logo' />
           </NavbarBrand>
