@@ -1,43 +1,28 @@
 @import '../main.scss';
 
 .header {
-  background-color: $color-black;
   color: $color-gray;
-  // border: 1px solid red;
-  padding-top: 1em;
-  .header-nav {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
+  .logo {
+    width: 3em;
+  }
+  .list-wrapper {
+    justify-content: flex-end;
     ul {
-      display: flex;
-      flex-direction: row;
       li {
-        list-style: none;
-        margin: auto 3em;
+        font-weight: bold;
+        margin-right: 5rem;
+        text-transform: uppercase;
         a {
-          padding: 0;
-          border: none;
-          text-transform: uppercase;
-          background: none;
-          line-height: 1;
-          color: #8083ff;
-          transition: all 0.3s cubic-bezier(0.65, 0.05, 0.36, 1);
-          &:hover,
-          &:focus {
-            border-color: transparent;
-            box-shadow: none;
-            color: white;
-            text-decoration: none;
+          color: $color-gray;
+          text-decoration: none;
+          font-weight: bold;
+          &:hover {
+            color: $color-purple;
+            cursor: pointer;
+            transition: all 0.3s cubic-bezier(0.65, 0.05, 0.36, 1);
           }
         }
       }
     }
-  }
-}
-
-@media screen and (max-width: $break-portrait) {
-  .header {
-    background-color: $color-green;
   }
 }
