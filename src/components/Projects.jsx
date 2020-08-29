@@ -26,8 +26,10 @@ const Projects = ({ projects }) => {
                 <p>{item.description}</p>
                 <div className='tech-badge'>
                   {item.tech.map((subitem) => (
-                    <Badge key={subitem} color='light'>
-                      {subitem}
+                    <Badge key={subitem.id} color='light'>
+                      <a href={subitem.url} target='_blank' rel='noreferrer'>
+                        {subitem.name}
+                      </a>
                     </Badge>
                   ))}
                 </div>
