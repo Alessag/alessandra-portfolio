@@ -166,7 +166,29 @@ const App = () => {
         date: '2018',
         description: 'Short description about the project',
         repo: 'https://github.com/Alessag/italy',
-        tech: ['HTML5', 'CSS3', 'Bootstrap', 'Git'],
+        tech: [
+          {
+            id: '1',
+            name: 'HTML5',
+            url:
+              'https://developer.mozilla.org/en-US/docs/Web/Guide/HTML/HTML5',
+          },
+          {
+            id: '2',
+            name: 'CSS3',
+            url: 'https://developer.mozilla.org/en-US/docs/Web/CSS',
+          },
+          {
+            id: '3',
+            name: 'Bootstrap',
+            url: 'https://getbootstrap.com/',
+          },
+          {
+            id: '4',
+            name: 'Git',
+            url: 'https://git-scm.com/',
+          },
+        ],
       },
       {
         id: '2',
@@ -177,7 +199,39 @@ const App = () => {
         description:
           'Short description about the project Short description about the project Short description about the project',
         repo: 'https://github.com/Alessag/random-quote-machine',
-        tech: ['HTML5', 'CSS3', 'React', 'Material UI', 'Git', 'Netlify'],
+        tech: [
+          {
+            id: '1',
+            name: 'HTML5',
+            url:
+              'https://developer.mozilla.org/en-US/docs/Web/Guide/HTML/HTML5',
+          },
+          {
+            id: '2',
+            name: 'CSS3',
+            url: 'https://developer.mozilla.org/en-US/docs/Web/CSS',
+          },
+          {
+            id: '3',
+            name: 'React',
+            url: 'https://reactjs.org/',
+          },
+          {
+            id: '4',
+            name: 'Material UI',
+            url: 'https://material-ui.com/',
+          },
+          {
+            id: '5',
+            name: 'Git',
+            url: 'https://git-scm.com/',
+          },
+          {
+            id: '6',
+            name: 'Netlify',
+            url: 'https://www.netlify.com/',
+          },
+        ],
       },
       {
         id: '3',
@@ -187,7 +241,39 @@ const App = () => {
         date: '2020',
         description: 'Short description about the project',
         repo: 'https://github.com/Alessag/markdown-editor',
-        tech: ['HTML5', 'CSS3', 'React', 'Emotion', 'Git', 'Firebase'],
+        tech: [
+          {
+            id: '1',
+            name: 'HTML5',
+            url:
+              'https://developer.mozilla.org/en-US/docs/Web/Guide/HTML/HTML5',
+          },
+          {
+            id: '2',
+            name: 'CSS3',
+            url: 'https://developer.mozilla.org/en-US/docs/Web/CSS',
+          },
+          {
+            id: '3',
+            name: 'React',
+            url: 'https://reactjs.org/',
+          },
+          {
+            id: '4',
+            name: 'Emotion',
+            url: 'https://emotion.sh/docs/introduction',
+          },
+          {
+            id: '5',
+            name: 'Git',
+            url: 'https://git-scm.com/',
+          },
+          {
+            id: '6',
+            name: 'Firebase',
+            url: 'https://firebase.google.com/',
+          },
+        ],
       },
       {
         id: '4',
@@ -197,7 +283,34 @@ const App = () => {
         date: '2020',
         description: 'Short description about the project',
         repo: 'https://github.com/Alessag/drum-machine',
-        tech: ['HTML5', 'CSS3', 'React', 'Git', 'Firebase'],
+        tech: [
+          {
+            id: '1',
+            name: 'HTML5',
+            url:
+              'https://developer.mozilla.org/en-US/docs/Web/Guide/HTML/HTML5',
+          },
+          {
+            id: '2',
+            name: 'CSS3',
+            url: 'https://developer.mozilla.org/en-US/docs/Web/CSS',
+          },
+          {
+            id: '3',
+            name: 'React',
+            url: 'https://reactjs.org/',
+          },
+          {
+            id: '4',
+            name: 'Git',
+            url: 'https://git-scm.com/',
+          },
+          {
+            id: '5',
+            name: 'Firebase',
+            url: 'https://firebase.google.com/',
+          },
+        ],
       },
       {
         id: '5',
@@ -207,7 +320,34 @@ const App = () => {
         date: '2020',
         description: 'Short description about the project',
         repo: 'https://github.com/Alessag/react-calculator',
-        tech: ['HTML5', 'CSS3', 'React', 'Firebase'],
+        tech: [
+          {
+            id: '1',
+            name: 'HTML5',
+            url:
+              'https://developer.mozilla.org/en-US/docs/Web/Guide/HTML/HTML5',
+          },
+          {
+            id: '2',
+            name: 'CSS3',
+            url: 'https://developer.mozilla.org/en-US/docs/Web/CSS',
+          },
+          {
+            id: '3',
+            name: 'React',
+            url: 'https://reactjs.org/',
+          },
+          {
+            id: '4',
+            name: 'Git',
+            url: 'https://git-scm.com/',
+          },
+          {
+            id: '5',
+            name: 'Firebase',
+            url: 'https://firebase.google.com/',
+          },
+        ],
       },
       {
         id: '6',
@@ -217,7 +357,39 @@ const App = () => {
         date: '2020',
         description: 'Short description about the project',
         repo: 'https://github.com/Alessag/pomodoro-clock',
-        tech: ['HTML5', 'CSS3', 'React', 'Tailwindcss', 'Git', 'Firebase'],
+        tech: [
+          {
+            id: '1',
+            name: 'HTML5',
+            url:
+              'https://developer.mozilla.org/en-US/docs/Web/Guide/HTML/HTML5',
+          },
+          {
+            id: '2',
+            name: 'CSS3',
+            url: 'https://developer.mozilla.org/en-US/docs/Web/CSS',
+          },
+          {
+            id: '3',
+            name: 'React',
+            url: 'https://reactjs.org/',
+          },
+          {
+            id: '4',
+            name: 'Tailwindcss',
+            url: 'https://tailwindcss.com/',
+          },
+          {
+            id: '5',
+            name: 'Git',
+            url: 'https://git-scm.com/',
+          },
+          {
+            id: '6',
+            name: 'Firebase',
+            url: 'https://firebase.google.com/',
+          },
+        ],
       },
       {
         id: '7',
@@ -227,7 +399,29 @@ const App = () => {
         date: '2020',
         description: 'Short description about the project',
         repo: 'https://github.com/Alessag/Amura',
-        tech: ['HTML5', 'CSS3', 'Bootstrap', 'Git'],
+        tech: [
+          {
+            id: '1',
+            name: 'HTML5',
+            url:
+              'https://developer.mozilla.org/en-US/docs/Web/Guide/HTML/HTML5',
+          },
+          {
+            id: '2',
+            name: 'CSS3',
+            url: 'https://developer.mozilla.org/en-US/docs/Web/CSS',
+          },
+          {
+            id: '3',
+            name: 'Bootstrap',
+            url: 'https://getbootstrap.com/',
+          },
+          {
+            id: '4',
+            name: 'Git',
+            url: 'https://git-scm.com/',
+          },
+        ],
       },
       {
         id: '8',
@@ -237,7 +431,29 @@ const App = () => {
         date: '2020',
         description: 'Short description about the project',
         repo: 'https://github.com/Alessag/platzi-palooza',
-        tech: ['HTML5', 'CSS3', 'Foundation', 'Git'],
+        tech: [
+          {
+            id: '1',
+            name: 'HTML5',
+            url:
+              'https://developer.mozilla.org/en-US/docs/Web/Guide/HTML/HTML5',
+          },
+          {
+            id: '2',
+            name: 'CSS3',
+            url: 'https://developer.mozilla.org/en-US/docs/Web/CSS',
+          },
+          {
+            id: '3',
+            name: 'Foundation',
+            url: 'https://get.foundation/',
+          },
+          {
+            id: '4',
+            name: 'Git',
+            url: 'https://git-scm.com/',
+          },
+        ],
       },
       {
         id: '9',
@@ -247,7 +463,24 @@ const App = () => {
         date: '2020',
         description: 'Short description about the project',
         repo: 'https://github.com/Alessag/Trombone',
-        tech: ['HTML5', 'CSS3', 'Git'],
+        tech: [
+          {
+            id: '1',
+            name: 'HTML5',
+            url:
+              'https://developer.mozilla.org/en-US/docs/Web/Guide/HTML/HTML5',
+          },
+          {
+            id: '2',
+            name: 'CSS3',
+            url: 'https://developer.mozilla.org/en-US/docs/Web/CSS',
+          },
+          {
+            id: '3',
+            name: 'Git',
+            url: 'https://git-scm.com/',
+          },
+        ],
       },
       {
         id: '10',
@@ -257,7 +490,30 @@ const App = () => {
         date: '2020',
         description: 'Short description about the project',
         repo: 'https://github.com/Alessag/Instagram-Layout',
-        tech: ['HTML5', 'CSS3', 'CSS Grid', 'Git'],
+        tech: [
+          {
+            id: '1',
+            name: 'HTML5',
+            url:
+              'https://developer.mozilla.org/en-US/docs/Web/Guide/HTML/HTML5',
+          },
+          {
+            id: '2',
+            name: 'CSS3',
+            url: 'https://developer.mozilla.org/en-US/docs/Web/CSS',
+          },
+          {
+            id: '3',
+            name: 'CSS Grid',
+            url:
+              'https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Grid_Layout',
+          },
+          {
+            id: '4',
+            name: 'Git',
+            url: 'https://git-scm.com/',
+          },
+        ],
       },
       {
         id: '11',
@@ -267,7 +523,24 @@ const App = () => {
         date: '2020',
         description: 'Short description about the project',
         repo: 'https://github.com/Alessag/google-clone',
-        tech: ['HTML5', 'CSS3', 'Git'],
+        tech: [
+          {
+            id: '1',
+            name: 'HTML5',
+            url:
+              'https://developer.mozilla.org/en-US/docs/Web/Guide/HTML/HTML5',
+          },
+          {
+            id: '2',
+            name: 'CSS3',
+            url: 'https://developer.mozilla.org/en-US/docs/Web/CSS',
+          },
+          {
+            id: '3',
+            name: 'Git',
+            url: 'https://git-scm.com/',
+          },
+        ],
       },
       {
         id: '12',
@@ -277,7 +550,30 @@ const App = () => {
         date: '2020',
         description: 'Short description about the project',
         repo: 'https://github.com/Alessag/Survey-Form',
-        tech: ['HTML5', 'CSS3', 'CSS Grid', 'Git'],
+        tech: [
+          {
+            id: '1',
+            name: 'HTML5',
+            url:
+              'https://developer.mozilla.org/en-US/docs/Web/Guide/HTML/HTML5',
+          },
+          {
+            id: '2',
+            name: 'CSS3',
+            url: 'https://developer.mozilla.org/en-US/docs/Web/CSS',
+          },
+          {
+            id: '3',
+            name: 'CSS Grid',
+            url:
+              'https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Grid_Layout',
+          },
+          {
+            id: '4',
+            name: 'Git',
+            url: 'https://git-scm.com/',
+          },
+        ],
       },
     ],
   };
