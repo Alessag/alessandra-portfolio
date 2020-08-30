@@ -33,9 +33,6 @@ const Header = () => {
               <NavItem>
                 <Link to='/about'>About</Link>
               </NavItem>
-              <NavItem>
-                <Link to='/contact'>Contact</Link>
-              </NavItem>
             </Nav>
           </Collapse>
         </Navbar>
