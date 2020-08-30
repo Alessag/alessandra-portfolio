@@ -576,6 +576,28 @@ const App = () => {
         ],
       },
     ],
+    socialNetworks: [
+      {
+        id: '1',
+        name: 'Linkedin',
+        url: 'https://www.linkedin.com/in/AlessandraAmicarella/',
+      },
+      {
+        id: '2',
+        name: 'Telegram',
+        url: 'https://t.me/Alessamica',
+      },
+      {
+        id: '3',
+        name: 'GitHub',
+        url: 'https://github.com/alessag',
+      },
+      {
+        id: '4',
+        name: 'Instagram',
+        url: 'https://instagram.com/amicarellaa',
+      },
+    ],
   };
 
   return (
