@@ -27,7 +27,11 @@ const Projects = ({ projects }) => {
                 <div className='tech-badge'>
                   {item.tech.map((subitem) => (
                     <Badge key={subitem.id} color='light'>
-                      <a href={subitem.url} target='_blank' rel='noreferrer'>
+                      <a
+                        href={subitem.url}
+                        target='_blank'
+                        rel='noopener noreferrer'
+                      >
                         {subitem.name}
                       </a>
                     </Badge>
