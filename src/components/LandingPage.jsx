@@ -1,6 +1,5 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import { Container } from 'reactstrap';
 import Info from './Info';
 import Projects from './Projects';
 import '../assets/styles/components/LandingPage.scss';
@@ -48,9 +47,6 @@ function LandingPage({ projects }) {
           </li>
         </ul>
       </div>
-      <Container className='home-container'>
-        <div className='cube'>Front End Developer</div>
-      </Container>
       <Info />
       <Projects projects={projects} />
     </div>
