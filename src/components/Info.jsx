@@ -9,12 +9,11 @@ const Info = () => {
     <Container className='info-container'>
       <Row>
         <Col sm='12' md='6' className='info-container__text'>
-          <h3 className='sub-title'>Alessandra Amicarella</h3>
-          <h1 className='title '>Front End Developer</h1>
+          <h6 className='sub-title'>Hi, I am Alessandra Amicarella</h6>
+          <h1 className='title '>Front End Developer That Love Challenges</h1>
           <p className='text'>
-            I am a computer engineering student, I am passionate about the
-            digital world and discover new techs. Actually I am making inroads
-            hunting in new projects with React.
+            I am looking for opportunities to collaborate, support and grow
+            professionally as frontend, with availability immediate.
           </p>
           <Link to='/about'>Read About Me</Link>
         </Col>
