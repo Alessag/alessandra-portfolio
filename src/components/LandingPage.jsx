@@ -4,7 +4,7 @@ import Info from './Info';
 import Projects from './Projects';
 import '../assets/styles/components/LandingPage.scss';
 
-function LandingPage({ projects }) {
+function LandingPage({ projects, name, profession, bio }) {
   return (
     <div className='home-page'>
       <div className='social-container'>
@@ -47,7 +47,7 @@ function LandingPage({ projects }) {
           </li>
         </ul>
       </div>
-      <Info />
+      <Info name={name} profession={profession} bio={bio} />
       <Projects projects={projects} />
     </div>
   );
@@ -55,6 +55,9 @@ function LandingPage({ projects }) {
 
 LandingPage.propTypes = {
   projects: PropTypes.array.isRequired,
+  name: PropTypes.string.isRequired,
+  profession: PropTypes.string.isRequired,
+  bio: PropTypes.string.isRequired,
 };
 
 export default LandingPage;
