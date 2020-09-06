@@ -15,8 +15,12 @@ const App = () => {
     <div>
       <Header />
       <Main
+        name={data.name}
+        profession={data.profession}
+        bio={data.bio}
         projects={data.projects}
         certificates={data.certifications}
+        experience={data.experience}
         skills={data.skills}
       />
       <Footer />
