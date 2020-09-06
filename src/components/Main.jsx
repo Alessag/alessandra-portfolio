@@ -4,15 +4,31 @@ import { Switch, Route } from 'react-router-dom';
 import About from './About';
 import LandingPage from './LandingPage';
 
-function Main(props) {
-  const { projects, certificates, skills } = props;
+function Main({
+  projects,
+  name,
+  profession,
+  bio,
+  certificates,
+  experience,
+  skills,
+}) {
   return (
     <Switch>
       <Route exact path='/about'>
-        <About certificates={certificates} skills={skills} />
+        <About
+          certificates={certificates}
+          experience={experience}
+          skills={skills}
+        />
       </Route>
       <Route exact path='/'>
-        <LandingPage projects={projects} />
+        <LandingPage
+          projects={projects}
+          name={name}
+          profession={profession}
+          bio={bio}
+        />
       </Route>
     </Switch>
   );
@@ -20,7 +36,11 @@ function Main(props) {
 
 Main.propTypes = {
   projects: PropTypes.array.isRequired,
+  name: PropTypes.string.isRequired,
+  profession: PropTypes.string.isRequired,
+  bio: PropTypes.string.isRequired,
   certificates: PropTypes.array.isRequired,
+  experience: PropTypes.array.isRequired,
   skills: PropTypes.array.isRequired,
 };
 
