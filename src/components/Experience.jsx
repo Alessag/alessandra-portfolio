@@ -5,7 +5,7 @@ import Skills from './Skills';
 import '../assets/styles/components/Experience.scss';
 import { Button } from './Button';
 
-const Experience = ({ skills }) => {
+const Experience = ({ skills, experience }) => {
   return (
     <Container className='experience'>
       <h1 className='experience__title'>About Me</h1>
@@ -24,19 +24,9 @@ const Experience = ({ skills }) => {
           </Button>
         </Col>
         <Col md={6} className='experience__text text-justify'>
-          <p>
-            Consequat consequat esse mollit veniam exercitation laboris enim sit
-            aliqua id commodo. Qui commodo aliquip minim irure eiusmod.
-          </p>
-          <p>
-            loremDolore non nisi incididunt adipisicing nulla. Culpa sint magna
-            magna nulla incididunt. Amet ipsum cupidatat reprehenderit Lorem do
-            aboris do aute velit quis est.
-          </p>
-          <p>
-            Incididunt ea et aliquip cupidatat dolore consequat cupidatat
-            mollit.
-          </p>
+          {experience.map((item) => (
+            <p key={item.id}>{item.paragraph}</p>
+          ))}
           <Skills skills={skills} />
         </Col>
       </Row>
@@ -46,6 +36,7 @@ const Experience = ({ skills }) => {
 
 Experience.propTypes = {
   skills: PropTypes.array.isRequired,
+  experience: PropTypes.array.isRequired,
 };
 
 export default Experience;
