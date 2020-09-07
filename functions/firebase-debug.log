@@ -1,0 +1,85 @@
+[debug] [2020-09-07T16:16:51.494Z] ----------------------------------------------------------------------
+[debug] [2020-09-07T16:16:51.496Z] Command:       /usr/local/bin/node /usr/local/bin/firebase functions:shell
+[debug] [2020-09-07T16:16:51.496Z] CLI Version:   8.10.0
+[debug] [2020-09-07T16:16:51.496Z] Platform:      linux
+[debug] [2020-09-07T16:16:51.496Z] Node Version:  v12.18.2
+[debug] [2020-09-07T16:16:51.497Z] Time:          Mon Sep 07 2020 12:16:51 GMT-0400 (Venezuela Time)
+[debug] [2020-09-07T16:16:51.497Z] ----------------------------------------------------------------------
+[debug] [2020-09-07T16:16:51.497Z] 
+[debug] [2020-09-07T16:16:51.504Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2020-09-07T16:16:51.504Z] > authorizing via signed-in user
+[debug] [2020-09-07T16:16:51.505Z] [iam] checking project alessandra-portfolio for permissions ["firebase.projects.get"]
+[debug] [2020-09-07T16:16:51.508Z] >>> HTTP REQUEST POST https://cloudresourcemanager.googleapis.com/v1/projects/alessandra-portfolio:testIamPermissions  
+ {"permissions":["firebase.projects.get"]}
+[debug] [2020-09-07T16:16:52.205Z] <<< HTTP RESPONSE 200 {"content-type":"application/json; charset=UTF-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","date":"Mon, 07 Sep 2020 16:16:52 GMT","server":"ESF","cache-control":"private","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","server-timing":"gfet4t7; dur=170","alt-svc":"h3-29=\":443\"; ma=2592000,h3-27=\":443\"; ma=2592000,h3-T051=\":443\"; ma=2592000,h3-T050=\":443\"; ma=2592000,h3-Q050=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\"","accept-ranges":"none","transfer-encoding":"chunked"}
+[warn] ⚠  Your requested "node" version "8" doesn't match your global version "12" {"metadata":{"emulator":{"name":"functions"},"message":"Your requested \"node\" version \"8\" doesn't match your global version \"12\""}}
+[debug] [2020-09-07T16:16:52.242Z] defaultcredentials: writing to file /home/alessandra/.config/firebase/alessamica_gmail_com_application_default_credentials.json
+[debug] [2020-09-07T16:16:52.244Z] DEBUG: Setting GAC to /home/alessandra/.config/firebase/alessamica_gmail_com_application_default_credentials.json
+[debug] [2020-09-07T16:16:52.261Z] [functions] Watching "/home/alessandra/Desktop/Front End Proyects/alessandra-portfolio/functions" for Cloud Functions...
+[debug] [2020-09-07T16:16:52.276Z] DEBUG: [worker-pool] addWorker(~diagnostic~)
+[debug] [2020-09-07T16:16:52.276Z] DEBUG: [worker-pool] Adding worker with key ~diagnostic~, total=1
+[debug] [2020-09-07T16:16:52.276Z] DEBUG: [worker-pool] submitWork(triggerId=)
+[debug] [2020-09-07T16:16:52.277Z] DEBUG: [worker-~diagnostic~-fe8f2f60-6953-4a72-b20b-bf227dcd04ec]: Assigning socketPath: /tmp/fire_emu_11903.sock
+[debug] [2020-09-07T16:16:52.277Z] DEBUG: [worker-~diagnostic~-fe8f2f60-6953-4a72-b20b-bf227dcd04ec]: BUSY
+[debug] [2020-09-07T16:16:52.590Z] DEBUG: [runtime-status] [11903] Functions runtime initialized. {"cwd":"/home/alessandra/Desktop/Front End Proyects/alessandra-portfolio/functions","node_version":"12.18.2"}
+[debug] [2020-09-07T16:16:52.592Z] DEBUG: [runtime-status] [11903] Disabled runtime features: undefined
+[debug] [2020-09-07T16:16:52.594Z] DEBUG: [runtime-status] [11903] Resolved module firebase-admin {"declared":true,"installed":true,"version":"8.13.0","resolution":"/home/alessandra/Desktop/Front End Proyects/alessandra-portfolio/functions/node_modules/firebase-admin/lib/index.js"}
+[debug] [2020-09-07T16:16:52.598Z] DEBUG: [runtime-status] [11903] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.11.0","resolution":"/home/alessandra/Desktop/Front End Proyects/alessandra-portfolio/functions/node_modules/firebase-functions/lib/index.js"}
+[debug] [2020-09-07T16:16:52.600Z] DEBUG: [runtime-status] [11903] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.11.0","resolution":"/home/alessandra/Desktop/Front End Proyects/alessandra-portfolio/functions/node_modules/firebase-functions/lib/index.js"}
+[debug] [2020-09-07T16:16:52.602Z] DEBUG: [runtime-status] [11903] Outgoing network have been stubbed. [{"name":"http","status":"mocked"},{"name":"http","status":"mocked"},{"name":"https","status":"mocked"},{"name":"https","status":"mocked"},{"name":"net","status":"mocked"}]
+[debug] [2020-09-07T16:16:52.603Z] DEBUG: [runtime-status] [11903] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.11.0","resolution":"/home/alessandra/Desktop/Front End Proyects/alessandra-portfolio/functions/node_modules/firebase-functions/lib/index.js"}
+[debug] [2020-09-07T16:16:52.639Z] DEBUG: [runtime-status] [11903] Checked functions.config() {"config":{}}
+[debug] [2020-09-07T16:16:52.639Z] DEBUG: [runtime-status] [11903] firebase-functions has been stubbed. {"functionsResolution":{"declared":true,"installed":true,"version":"3.11.0","resolution":"/home/alessandra/Desktop/Front End Proyects/alessandra-portfolio/functions/node_modules/firebase-functions/lib/index.js"}}
+[debug] [2020-09-07T16:16:52.640Z] DEBUG: [runtime-status] [11903] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.11.0","resolution":"/home/alessandra/Desktop/Front End Proyects/alessandra-portfolio/functions/node_modules/firebase-functions/lib/index.js"}
+[debug] [2020-09-07T16:16:52.642Z] DEBUG: [runtime-status] [11903] Resolved module firebase-admin {"declared":true,"installed":true,"version":"8.13.0","resolution":"/home/alessandra/Desktop/Front End Proyects/alessandra-portfolio/functions/node_modules/firebase-admin/lib/index.js"}
+[debug] [2020-09-07T16:16:52.642Z] DEBUG: [runtime-status] [11903] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.11.0","resolution":"/home/alessandra/Desktop/Front End Proyects/alessandra-portfolio/functions/node_modules/firebase-functions/lib/index.js"}
+[debug] [2020-09-07T16:16:52.642Z] DEBUG: [runtime-status] [11903] firebase-admin has been stubbed. {"adminResolution":{"declared":true,"installed":true,"version":"8.13.0","resolution":"/home/alessandra/Desktop/Front End Proyects/alessandra-portfolio/functions/node_modules/firebase-admin/lib/index.js"}}
+[warn] ⚠  It looks like you're trying to access functions.config().gmail but there is no value there. You can learn more about setting up config here: https://firebase.google.com/docs/functions/local-emulator {"metadata":{"emulator":{"name":"functions"},"message":"It looks like you're trying to access functions.config().gmail but there is no value there. You can learn more about setting up config here: https://firebase.google.com/docs/functions/local-emulator"}}
+[warn] ⚠  TypeError: Cannot read property 'email' of undefined
+    at Object.<anonymous> (/home/alessandra/Desktop/Front End Proyects/alessandra-portfolio/functions/index.js:7:44)
+    at Module._compile (internal/modules/cjs/loader.js:1138:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:1158:10)
+    at Module.load (internal/modules/cjs/loader.js:986:32)
+    at Function.Module._load (internal/modules/cjs/loader.js:879:14)
+    at Module.require (internal/modules/cjs/loader.js:1026:19)
+    at require (internal/modules/cjs/helpers.js:72:18)
+    at /usr/local/lib/node_modules/firebase-tools/lib/emulator/functionsEmulatorRuntime.js:681:33
+    at Generator.next (<anonymous>)
+    at fulfilled (/usr/local/lib/node_modules/firebase-tools/lib/emulator/functionsEmulatorRuntime.js:5:58) {"metadata":{"emulator":{"name":"functions"},"message":"TypeError: Cannot read property 'email' of undefined\n    at Object.<anonymous> (/home/alessandra/Desktop/Front End Proyects/alessandra-portfolio/functions/index.js:7:44)\n    at Module._compile (internal/modules/cjs/loader.js:1138:30)\n    at Object.Module._extensions..js (internal/modules/cjs/loader.js:1158:10)\n    at Module.load (internal/modules/cjs/loader.js:986:32)\n    at Function.Module._load (internal/modules/cjs/loader.js:879:14)\n    at Module.require (internal/modules/cjs/loader.js:1026:19)\n    at require (internal/modules/cjs/helpers.js:72:18)\n    at /usr/local/lib/node_modules/firebase-tools/lib/emulator/functionsEmulatorRuntime.js:681:33\n    at Generator.next (<anonymous>)\n    at fulfilled (/usr/local/lib/node_modules/firebase-tools/lib/emulator/functionsEmulatorRuntime.js:5:58)"}}
+[warn] ⚠  We were unable to load your functions code. (see above) {"metadata":{"emulator":{"name":"functions"}}}
+[debug] [2020-09-07T16:16:52.697Z] DEBUG: [worker-~diagnostic~-fe8f2f60-6953-4a72-b20b-bf227dcd04ec]: exited
+[debug] [2020-09-07T16:16:52.698Z] DEBUG: [worker-~diagnostic~-fe8f2f60-6953-4a72-b20b-bf227dcd04ec]: FINISHED
+[debug] [2020-09-07T16:18:56.564Z] DEBUG: File /home/alessandra/Desktop/Front End Proyects/alessandra-portfolio/functions/index.js changed, reloading triggers
+[debug] [2020-09-07T16:18:57.565Z] DEBUG: [worker-pool] Cleaned up workers for ~diagnostic~: 1 --> 0
+[debug] [2020-09-07T16:18:57.575Z] DEBUG: [worker-pool] addWorker(~diagnostic~)
+[debug] [2020-09-07T16:18:57.576Z] DEBUG: [worker-pool] Adding worker with key ~diagnostic~, total=1
+[debug] [2020-09-07T16:18:57.576Z] DEBUG: [worker-pool] submitWork(triggerId=)
+[debug] [2020-09-07T16:18:57.576Z] DEBUG: [worker-~diagnostic~-272149af-a16f-48c0-ac6c-c438f8557793]: Assigning socketPath: /tmp/fire_emu_12098.sock
+[debug] [2020-09-07T16:18:57.577Z] DEBUG: [worker-~diagnostic~-272149af-a16f-48c0-ac6c-c438f8557793]: BUSY
+[debug] [2020-09-07T16:18:57.907Z] DEBUG: [runtime-status] [12098] Functions runtime initialized. {"cwd":"/home/alessandra/Desktop/Front End Proyects/alessandra-portfolio/functions","node_version":"12.18.2"}
+[debug] [2020-09-07T16:18:57.909Z] DEBUG: [runtime-status] [12098] Disabled runtime features: undefined
+[debug] [2020-09-07T16:18:57.911Z] DEBUG: [runtime-status] [12098] Resolved module firebase-admin {"declared":true,"installed":true,"version":"8.13.0","resolution":"/home/alessandra/Desktop/Front End Proyects/alessandra-portfolio/functions/node_modules/firebase-admin/lib/index.js"}
+[debug] [2020-09-07T16:18:57.915Z] DEBUG: [runtime-status] [12098] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.11.0","resolution":"/home/alessandra/Desktop/Front End Proyects/alessandra-portfolio/functions/node_modules/firebase-functions/lib/index.js"}
+[debug] [2020-09-07T16:18:57.916Z] DEBUG: [runtime-status] [12098] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.11.0","resolution":"/home/alessandra/Desktop/Front End Proyects/alessandra-portfolio/functions/node_modules/firebase-functions/lib/index.js"}
+[debug] [2020-09-07T16:18:57.919Z] DEBUG: [runtime-status] [12098] Outgoing network have been stubbed. [{"name":"http","status":"mocked"},{"name":"http","status":"mocked"},{"name":"https","status":"mocked"},{"name":"https","status":"mocked"},{"name":"net","status":"mocked"}]
+[debug] [2020-09-07T16:18:57.920Z] DEBUG: [runtime-status] [12098] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.11.0","resolution":"/home/alessandra/Desktop/Front End Proyects/alessandra-portfolio/functions/node_modules/firebase-functions/lib/index.js"}
+[debug] [2020-09-07T16:18:57.962Z] DEBUG: [runtime-status] [12098] Checked functions.config() {"config":{}}
+[debug] [2020-09-07T16:18:57.962Z] DEBUG: [runtime-status] [12098] firebase-functions has been stubbed. {"functionsResolution":{"declared":true,"installed":true,"version":"3.11.0","resolution":"/home/alessandra/Desktop/Front End Proyects/alessandra-portfolio/functions/node_modules/firebase-functions/lib/index.js"}}
+[debug] [2020-09-07T16:18:57.963Z] DEBUG: [runtime-status] [12098] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.11.0","resolution":"/home/alessandra/Desktop/Front End Proyects/alessandra-portfolio/functions/node_modules/firebase-functions/lib/index.js"}
+[debug] [2020-09-07T16:18:57.965Z] DEBUG: [runtime-status] [12098] Resolved module firebase-admin {"declared":true,"installed":true,"version":"8.13.0","resolution":"/home/alessandra/Desktop/Front End Proyects/alessandra-portfolio/functions/node_modules/firebase-admin/lib/index.js"}
+[debug] [2020-09-07T16:18:57.967Z] DEBUG: [runtime-status] [12098] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.11.0","resolution":"/home/alessandra/Desktop/Front End Proyects/alessandra-portfolio/functions/node_modules/firebase-functions/lib/index.js"}
+[debug] [2020-09-07T16:18:57.967Z] DEBUG: [runtime-status] [12098] firebase-admin has been stubbed. {"adminResolution":{"declared":true,"installed":true,"version":"8.13.0","resolution":"/home/alessandra/Desktop/Front End Proyects/alessandra-portfolio/functions/node_modules/firebase-admin/lib/index.js"}}
+[warn] ⚠  TypeError: Cannot read property 'email' of undefined
+    at Object.<anonymous> (/home/alessandra/Desktop/Front End Proyects/alessandra-portfolio/functions/index.js:7:44)
+    at Module._compile (internal/modules/cjs/loader.js:1138:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:1158:10)
+    at Module.load (internal/modules/cjs/loader.js:986:32)
+    at Function.Module._load (internal/modules/cjs/loader.js:879:14)
+    at Module.require (internal/modules/cjs/loader.js:1026:19)
+    at require (internal/modules/cjs/helpers.js:72:18)
+    at /usr/local/lib/node_modules/firebase-tools/lib/emulator/functionsEmulatorRuntime.js:681:33
+    at Generator.next (<anonymous>)
+    at fulfilled (/usr/local/lib/node_modules/firebase-tools/lib/emulator/functionsEmulatorRuntime.js:5:58) {"metadata":{"emulator":{"name":"functions"},"message":"TypeError: Cannot read property 'email' of undefined\n    at Object.<anonymous> (/home/alessandra/Desktop/Front End Proyects/alessandra-portfolio/functions/index.js:7:44)\n    at Module._compile (internal/modules/cjs/loader.js:1138:30)\n    at Object.Module._extensions..js (internal/modules/cjs/loader.js:1158:10)\n    at Module.load (internal/modules/cjs/loader.js:986:32)\n    at Function.Module._load (internal/modules/cjs/loader.js:879:14)\n    at Module.require (internal/modules/cjs/loader.js:1026:19)\n    at require (internal/modules/cjs/helpers.js:72:18)\n    at /usr/local/lib/node_modules/firebase-tools/lib/emulator/functionsEmulatorRuntime.js:681:33\n    at Generator.next (<anonymous>)\n    at fulfilled (/usr/local/lib/node_modules/firebase-tools/lib/emulator/functionsEmulatorRuntime.js:5:58)"}}
+[warn] ⚠  We were unable to load your functions code. (see above) {"metadata":{"emulator":{"name":"functions"}}}
+[debug] [2020-09-07T16:18:58.024Z] DEBUG: [worker-~diagnostic~-272149af-a16f-48c0-ac6c-c438f8557793]: exited
+[debug] [2020-09-07T16:18:58.025Z] DEBUG: [worker-~diagnostic~-272149af-a16f-48c0-ac6c-c438f8557793]: FINISHED
