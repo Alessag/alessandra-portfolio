@@ -17,7 +17,7 @@ const Experience = ({ skills, experience }) => {
             className='img-fluid'
           />
           <Button
-            href='https://drive.google.com/file/d/1Zox0mZ26OXPvftvi5Q8OFNlrmJPP7xVJ/view?usp=sharing'
+            href='https://www.dropbox.com/s/releha84jcv6n3i/Alessandra%20Amicarella.pdf?dl=0'
             target='_blank'
           >
             Download CV
