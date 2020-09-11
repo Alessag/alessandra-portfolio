@@ -1,67 +1,34 @@
 @import '../main.scss';
 
-h1 {
-  display: table;
-  margin: 40px auto;
-  color: #fff;
-  font: 30px Helvetica;
-  letter-spacing: 2px;
-  text-transform: uppercase;
-  letter-spacing: 10px;
-}
-
-form {
-  display: table;
-  margin: 40px auto;
-
-  input,
-  textarea {
-    font: 18px Helvetica, Arial, sans-serif;
-    box-sizing: border-box;
-    display: block;
-    border: none;
-    padding: 20px;
-    width: 300px;
-    margin-bottom: 20px;
-    font-size: 18px;
-    outline: none;
-    transition: all 0.2s ease-in-out;
-
-    &::placeholder {
-      transition: all 0.2s ease-in-out;
-      color: #999;
-      font: 18px Helvetica, Arial, sans-serif;
-    }
-
-    &:focus,
-    &.populated {
-      padding-top: 28px;
-      padding-bottom: 12px;
-
-      &::placeholder {
-        color: transparent;
-      }
-    }
-  }
-
-  textarea {
-    height: 200px;
-  }
-
-  button {
-    transition: all 0.2s ease-in-out;
-    font: 18px Helvetica, Arial, sans-serif;
-    border: none;
-    background: #1792e8;
-    color: #fff;
-    padding: 20px;
-    width: 100%;
+.contact {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  .contact__title {
     text-transform: uppercase;
-    letter-spacing: 5px;
-
-    &:hover {
-      background: #0e82d4;
-      cursor: pointer;
+    font-weight: bolder;
+    letter-spacing: 0.1em;
+  }
+  .screen {
+    .screen-body {
+      .screen-body-item {
+        form {
+          .form-control {
+            width: 100%;
+            padding: 10px 0;
+            background: none;
+            border: none;
+            border-bottom: 1px solid #666;
+            color: #ddd;
+            font-size: 14px;
+            text-transform: uppercase;
+            outline: none;
+            transition: border-color 0.2s;
+          }
+        }
+      }
     }
   }
 }
