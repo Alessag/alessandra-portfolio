@@ -15,7 +15,6 @@ const Contact = () => {
 
   return (
     <Container className='contact'>
-      <h1 className='contact__title'>Form contact</h1>
       <div className='background'>
         <div className='container'>
           <div className='screen'>
@@ -93,6 +92,7 @@ const Contact = () => {
                       className='app-form-control'
                       type='text'
                       name='message'
+                      rows='5'
                       ref={register({
                         required: true,
                         minLength: 10,
