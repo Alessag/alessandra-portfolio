@@ -2,7 +2,7 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import { Container, Row, Col } from 'reactstrap';
 import { Link } from 'react-router-dom';
-import AlePhoto from '../assets/images/alessandra.jpg';
+import AlePhoto from '../assets/images/ale.jpg';
 import '../assets/styles/components/Info.scss';
 
 const Info = ({ name, profession, bio }) => {
@@ -11,7 +11,7 @@ const Info = ({ name, profession, bio }) => {
       <Row>
         <Col sm='12' md='6' className='info-container__text'>
           <h6 className='sub-title'>Hi, I am {name}</h6>
-          <h1 className='title '>{profession} That Love Challenges</h1>
+          <h1 className='primary-title '>{profession} That Love Challenges</h1>
           <p className='text'>{bio}</p>
           <Link to='/about'>Read About Me</Link>
         </Col>
