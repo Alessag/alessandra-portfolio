@@ -9,7 +9,7 @@ import { PrimaryButton } from './Button';
 const Projects = ({ projects }) => {
   return (
     <Container>
-      <h1 className='projects-content__title'>Recent projects</h1>
+      <h1 className='secondary-title'>Recent projects</h1>
       <Row className='justify-content-center'>
         {projects.map((item) => (
           <Col key={item.id} md='6' lg='4' className='projects-content__card'>

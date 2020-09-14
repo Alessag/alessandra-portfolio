@@ -8,7 +8,7 @@ import { Button } from './Button';
 const Experience = ({ skills, experience }) => {
   return (
     <Container className='experience'>
-      <h1 className='experience__title'>About Me</h1>
+      <h1 className='secondary-title'>About Me</h1>
       <Row>
         <Col md={6} className='experience__info text-center'>
           <img

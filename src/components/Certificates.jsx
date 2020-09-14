@@ -8,7 +8,7 @@ import '../assets/styles/components/Certificates.scss';
 
 const Certificates = ({ certificates }) => (
   <Container className='certificates'>
-    <h1 className='certificates__title'>Certifications</h1>
+    <h1 className='secondary-title'>Certifications</h1>
     <Row className='justify-content-center'>
       {certificates.map((item) => (
         <Col key={item.id} md='6' lg='4' className='certificates__card'>
