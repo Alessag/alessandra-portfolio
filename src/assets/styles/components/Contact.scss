@@ -1,87 +1,32 @@
 @import '../main.scss';
 
-.contact-title {
-  font-weight: bold;
-}
-.background {
+.contact-body {
+  height: 100vh;
+  width: 100%;
+  background-image: url('../../images/pexels-davi-pimentel-2064827.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-origin: initial;
   display: flex;
-  // min-height: 100vh;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
 }
 
-.container {
-  flex: 0 1 700px;
-  margin: auto;
-  padding: 10px;
-}
-
-.screen {
-  position: relative;
-  background: #3a3c41;
-  border-radius: 15px;
-  &:after {
-    content: '';
-    display: block;
-    position: absolute;
-    top: 0;
-    left: 20px;
-    right: 20px;
-    bottom: 0;
-    border-radius: 15px;
-    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.4);
-    z-index: -1;
-  }
-  .screen-header {
-    display: flex;
-    align-items: center;
-    padding: 10px 20px;
-    background: #4d4d4f;
-    border-top-left-radius: 15px;
-    border-top-right-radius: 15px;
-    .screen-header-left {
-      margin-right: auto;
-      .screen-header-button {
-        display: inline-block;
-        width: 8px;
-        height: 8px;
-        margin-right: 3px;
-        border-radius: 8px;
-        background: white;
-      }
-      .close {
-        float: none;
-        background: #ed1c6f;
-      }
-      .maximize {
-        background: #e8e925;
-      }
-      .minimize {
-        background: #74c54f;
-      }
-    }
-    .screen-header-right {
-      display: flex;
-      .screen-header-ellipsis {
-        width: 3px;
-        height: 3px;
-        margin-left: 2px;
-        border-radius: 8px;
-        background: #999;
-      }
-    }
-  }
-  .screen-body {
-    display: flex;
-  }
-}
-
-.screen-body-item {
-  flex: 1;
+.contact-body-item {
+  // width: 500px;
+  // height: 500px;
+  display: grid;
+  grid-template-columns: auto 40%;
+  grid-template-areas: 'left right';
+  // border: 5px solid red;
   padding: 50px;
+  background: #3a3c41;
   .app-title {
     display: flex;
     flex-direction: column;
     position: relative;
-    color: #ea1d6f;
+    color: $color-purple;
     font-size: 2em;
     text-transform: uppercase;
 
@@ -93,20 +38,21 @@
       bottom: -10px;
       width: 25px;
       height: 4px;
-      background: #ea1d6f;
+      background: $color-purple;
     }
-  }
-  .app-contact {
-    font-weight: bold;
-    margin-top: auto;
-    font-size: 0.8em;
-    color: #888;
   }
 }
 
-.screen-body-item.left {
+.left {
+  grid-area: left;
+  // background: #ddd;
   display: flex;
   flex-direction: column;
+}
+
+.right {
+  grid-area: right;
+  // background-color: chocolate;
 }
 
 .app-form-group {
@@ -124,9 +70,10 @@
   margin-bottom: 0;
   text-align: right;
   .app-form-button {
+    text-transform: uppercase;
     background: none;
     border: none;
-    color: #ea1d6f;
+    color: $color-purple;
     font-size: 14px;
     cursor: pointer;
     outline: none;
@@ -150,19 +97,19 @@
   transition: border-color 0.2s;
   &:focus {
     border-bottom-color: #ddd;
-    background: #3e3e3e;
+    background: #3a3c41;
   }
   &:placeholder {
-    color: #666;
+    color: #3a3c41;
   }
 }
 
 @media screen and (max-width: 520px) {
-  .screen-body {
+  .contact-body {
     flex-direction: column;
   }
 
-  .screen-body-item.left {
+  .contact-body-item.left {
     margin-bottom: 30px;
   }
 
@@ -180,11 +127,12 @@
 }
 
 @media screen and (max-width: 600px) {
-  .screen-body {
-    padding: 40px;
-  }
-
-  .screen-body-item {
-    padding: 0;
+  .contact-body-item {
+    display: flex;
+    flex-direction: column;
+    padding: 30px;
+    .left {
+      margin-bottom: 2em;
+    }
   }
 }
