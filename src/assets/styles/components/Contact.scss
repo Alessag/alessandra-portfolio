@@ -14,12 +14,10 @@
 }
 
 .contact-body-item {
-  // width: 500px;
-  // height: 500px;
+  width: calc(100% / 2.6);
   display: grid;
   grid-template-columns: auto 40%;
   grid-template-areas: 'left right';
-  // border: 5px solid red;
   padding: 50px;
   background: #3a3c41;
   .app-title {
@@ -29,7 +27,6 @@
     color: $color-purple;
     font-size: 2em;
     text-transform: uppercase;
-
     &:after {
       content: '';
       display: block;
@@ -45,14 +42,12 @@
 
 .left {
   grid-area: left;
-  // background: #ddd;
   display: flex;
   flex-direction: column;
 }
 
 .right {
   grid-area: right;
-  // background-color: chocolate;
 }
 
 .app-form-group {
@@ -78,10 +73,6 @@
     cursor: pointer;
     outline: none;
   }
-
-  .app-form-button:hover {
-    color: #b9134f;
-  }
 }
 
 .app-form-control {
@@ -92,7 +83,6 @@
   border-bottom: 1px solid #666;
   color: #ddd;
   font-size: 14px;
-  // text-transform: uppercase;
   outline: none;
   transition: border-color 0.2s;
   &:focus {
@@ -104,35 +94,28 @@
   }
 }
 
-@media screen and (max-width: 520px) {
-  .contact-body {
-    flex-direction: column;
-  }
-
-  .contact-body-item.left {
-    margin-bottom: 30px;
-  }
-
-  .app-title {
-    flex-direction: row;
-  }
-
-  .app-title span {
-    margin-right: 12px;
-  }
-
-  .app-title:after {
-    display: none;
-  }
-}
-
-@media screen and (max-width: 600px) {
+@media screen and (max-width: $break-tablet) {
   .contact-body-item {
-    display: flex;
-    flex-direction: column;
+    width: 50%;
     padding: 30px;
     .left {
       margin-bottom: 2em;
     }
+  }
+}
+
+@media screen and (max-width: $break-phone) {
+  .contact-body-item {
+    width: 80%;
+    padding: 30px;
+  }
+}
+
+@media screen and (max-width: $break-portrait) {
+  .contact-body-item {
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    padding: 30px;
   }
 }
