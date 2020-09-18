@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import '../assets/styles/components/Header.scss';
-import { Link } from 'react-router-dom';
+import { HashLink as Link } from 'react-router-hash-link';
 import {
   Collapse,
   Navbar,
@@ -32,6 +32,9 @@ const Header = () => {
               </NavItem>
               <NavItem>
                 <Link to='/about'>About</Link>
+              </NavItem>
+              <NavItem>
+                <Link to='/#contact'>Contact</Link>
               </NavItem>
             </Nav>
           </Collapse>
