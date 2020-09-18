@@ -8,7 +8,7 @@ import { PrimaryButton } from './Button';
 
 const Projects = ({ projects }) => {
   return (
-    <Container>
+    <Container className='project-container'>
       <h1 className='secondary-title'>Recent projects</h1>
       <Row className='justify-content-center'>
         {projects.map((item) => (
