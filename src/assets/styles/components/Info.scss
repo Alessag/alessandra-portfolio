@@ -26,15 +26,12 @@
 .info-container__text {
   padding: 0;
 }
-@media screen and (max-width: $break-tablet) {
-  .title {
-    font-size: 3em;
-  }
-}
 
 @media screen and (max-width: $break-phone) {
+  .info-container {
+    height: 100vh;
+  }
   .info-container__text {
-    text-align: center;
     order: 2;
   }
   .info-container__img {
@@ -44,7 +41,7 @@
 }
 
 @media screen and (max-width: $break-portrait) {
-  .title {
-    font-size: 2em;
+  .info-container__text {
+    padding: 1em;
   }
 }
