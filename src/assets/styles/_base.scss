@@ -116,3 +116,17 @@ a {
   text-transform: uppercase;
   font-weight: 600;
 }
+
+@media screen and (max-width: $break-tablet) {
+  .primary-title {
+    font-size: 3em;
+    margin-bottom: 0.3em;
+  }
+}
+
+@media screen and (max-width: $break-portrait) {
+  .primary-title {
+    font-size: 2em;
+    margin-bottom: 0.3em;
+  }
+}
