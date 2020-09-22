@@ -4,7 +4,6 @@ import {
   AiOutlineInstagram,
   AiFillLinkedin,
   AiFillGithub,
-  AiFillHeart,
   AiOutlineCopyrightCircle,
 } from 'react-icons/ai';
 import { FaTelegramPlane } from 'react-icons/fa';
@@ -13,7 +12,6 @@ import '../assets/styles/components/Footer.scss';
 const Footer = () => {
   return (
     <Container className='footer'>
-      <div className='divider' />
       <div>
         <ul className='footer__social-links'>
           <li>
@@ -58,10 +56,9 @@ const Footer = () => {
           </li>
         </ul>
       </div>
-      <div className='text-center footer__text'>
+      <div className='footer__text text-center'>
         <p>
-          Made with <AiFillHeart color='#54ecc4' /> in Venezuela <br />
-          2020 <AiOutlineCopyrightCircle /> Alessandra Amicarella
+          <AiOutlineCopyrightCircle /> 2020 Alessandra Amicarella
         </p>
       </div>
     </Container>
