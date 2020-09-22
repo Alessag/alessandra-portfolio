@@ -12,3 +12,9 @@
     margin-bottom: 2em;
   }
 }
+
+@media screen and (max-width: $break-portrait) {
+  .experience__text {
+    padding: 1em 2em;
+  }
+}
