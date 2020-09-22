@@ -22,6 +22,7 @@ const App = () => {
         certificates={data.certifications}
         experience={data.experience}
         skills={data.skills}
+        urlCv={data.urlCv}
       />
       <Footer />
     </div>
