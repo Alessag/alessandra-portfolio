@@ -4,22 +4,16 @@ import { Container, Row, Col } from 'reactstrap';
 import Skills from './Skills';
 import '../assets/styles/components/Experience.scss';
 import { Button } from './Button';
+import photoAle from '../assets/images/alessandra.jpg';
 
-const Experience = ({ skills, experience }) => {
+const Experience = ({ skills, experience, urlCv }) => {
   return (
     <Container className='experience'>
       <h1 className='secondary-title'>About Me</h1>
       <Row>
         <Col md={6} className='experience__info text-center'>
-          <img
-            src='https://avatars2.githubusercontent.com/u/17497470?s=460&u=c196f5794f01693344d53ac403cf22660b626b59&v=4'
-            alt='Alessandra'
-            className='img-fluid'
-          />
-          <Button
-            href='https://www.dropbox.com/s/releha84jcv6n3i/Alessandra%20Amicarella.pdf?dl=0'
-            target='_blank'
-          >
+          <img src={photoAle} alt='Alessandra' className='img-fluid' />
+          <Button href={urlCv} target='_blank'>
             Download CV
           </Button>
         </Col>
@@ -37,6 +31,7 @@ const Experience = ({ skills, experience }) => {
 Experience.propTypes = {
   skills: PropTypes.array.isRequired,
   experience: PropTypes.array.isRequired,
+  urlCv: PropTypes.string.isRequired,
 };
 
 export default Experience;

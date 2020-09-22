@@ -12,6 +12,7 @@ function Main({
   certificates,
   experience,
   skills,
+  urlCv,
 }) {
   return (
     <Switch>
@@ -20,6 +21,7 @@ function Main({
           certificates={certificates}
           experience={experience}
           skills={skills}
+          urlCv={urlCv}
         />
       </Route>
       <Route exact path='/'>
@@ -42,6 +44,7 @@ Main.propTypes = {
   certificates: PropTypes.array.isRequired,
   experience: PropTypes.array.isRequired,
   skills: PropTypes.array.isRequired,
+  urlCv: PropTypes.string.isRequired,
 };
 
 export default Main;
