@@ -1,25 +1,36 @@
 @import '../main.scss';
 
-.header {
-  color: $color-gray;
-  .logo {
-    width: 3em;
-  }
-  .list-wrapper {
-    justify-content: flex-end;
-    ul {
-      li {
-        font-weight: bold;
-        margin-right: 5rem;
-        text-transform: uppercase;
-        a {
-          color: $color-gray;
-          text-decoration: none;
+@media screen and (max-width: $break-phone) {
+  .header {
+    background-color: darkcyan;
+    color: $color-gray;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    .logo {
+      width: 3em;
+    }
+    .menu {
+      width: min-content;
+      ul {
+        padding-left: 0;
+        li {
+          text-align: center;
+          font-size: 2em;
           font-weight: bold;
-          &:hover {
-            color: $color-purple;
-            cursor: pointer;
-            transition: all 0.3s cubic-bezier(0.65, 0.05, 0.36, 1);
+          text-transform: uppercase;
+          list-style: none;
+          a {
+            color: $color-gray;
+            text-decoration: none;
+            font-weight: bold;
+            &:hover {
+              color: $color-purple;
+              cursor: pointer;
+              transition: all 0.3s cubic-bezier(0.65, 0.05, 0.36, 1);
+            }
           }
         }
       }

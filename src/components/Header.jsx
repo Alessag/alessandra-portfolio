@@ -1,45 +1,27 @@
-import React, { useState } from 'react';
+import React from 'react';
 import '../assets/styles/components/Header.scss';
 import { HashLink as Link } from 'react-router-hash-link';
-import {
-  Collapse,
-  Navbar,
-  NavbarToggler,
-  NavbarBrand,
-  Nav,
-  NavItem,
-  Container,
-} from 'reactstrap';
 import LogoAle from '../assets/images/logo-box.png';
 
 const Header = () => {
-  const [isOpen, setIsOpen] = useState(false);
-
-  const toggle = () => setIsOpen(!isOpen);
-
   return (
     <header className='header'>
-      <Container fluid>
-        <Navbar expand='md' dark>
-          <NavbarBrand href='/'>
-            <img src={LogoAle} alt='Logo' className='img-fluid logo' />
-          </NavbarBrand>
-          <NavbarToggler onClick={toggle} />
-          <Collapse isOpen={isOpen} navbar className='list-wrapper'>
-            <Nav navbar>
-              <NavItem>
-                <Link to='/'>Home</Link>
-              </NavItem>
-              <NavItem>
-                <Link to='/about'>About</Link>
-              </NavItem>
-              <NavItem>
-                <Link to='/#contact'>Contact</Link>
-              </NavItem>
-            </Nav>
-          </Collapse>
-        </Navbar>
-      </Container>
+      <img src={LogoAle} alt='Logo' className='img-fluid logo' />
+      <div className='menu'>
+        <nav>
+          <ul>
+            <li>
+              <Link to='/'>Home</Link>
+            </li>
+            <li>
+              <Link to='/about'>About</Link>
+            </li>
+            <li>
+              <Link to='/#contact'>Contact</Link>
+            </li>
+          </ul>
+        </nav>
+      </div>
     </header>
   );
 };
