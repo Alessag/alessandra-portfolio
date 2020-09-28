@@ -3,6 +3,7 @@ import PropTypes from 'prop-types';
 import { Switch, Route } from 'react-router-dom';
 import About from './About';
 import LandingPage from './LandingPage';
+import Contact from './Contact';
 
 function Main({
   projects,
@@ -23,6 +24,9 @@ function Main({
           skills={skills}
           urlCv={urlCv}
         />
+      </Route>
+      <Route exact path='/contact'>
+        <Contact />
       </Route>
       <Route exact path='/'>
         <LandingPage
