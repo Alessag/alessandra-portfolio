@@ -1,9 +1,9 @@
 @import '../main.scss';
 
 .info-container {
-  height: 90vh;
   display: flex;
   align-items: center;
+  padding: 2em 0 5em 0;
   a {
     text-transform: uppercase;
     background: none;
@@ -23,13 +23,10 @@
   align-self: center;
 }
 
-.info-container__text {
-  padding: 0;
-}
-
 @media screen and (max-width: $break-phone) {
   .info-container {
-    height: 100vh;
+    padding-bottom: 1em;
+    align-items: baseline;
   }
   .info-container__text {
     order: 2;
