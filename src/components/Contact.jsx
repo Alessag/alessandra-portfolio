@@ -1,14 +1,31 @@
+/* eslint-disable no-alert */
 /* eslint-disable no-useless-escape */
 /* eslint-disable jsx-a11y/label-has-associated-control */
 import React from 'react';
 import { useForm } from 'react-hook-form';
+import { db } from '../Firebase';
 import '../assets/styles/components/Contact.scss';
 
 const Contact = () => {
   const { register, handleSubmit, errors } = useForm();
-  const onSubmitForm = (data) => {
-    // console.log(data);
-    return data;
+  const docRef = db.collection('contactData');
+
+  const onSubmitForm = (data, e) => {
+    docRef
+      .doc()
+      .set({
+        email: data.email,
+        message: data.message,
+        name: data.name,
+      })
+      .then(() => {
+        alert('Message send!');
+      })
+      .catch((error) => {
+        alert('Got an error: ', error);
+      });
+
+    e.target.reset();
   };
 
   return (
@@ -31,7 +48,7 @@ const Contact = () => {
           <form onSubmit={handleSubmit(onSubmitForm)} className='app-form'>
             <div className='app-form-group'>
               <input
-                placeholder='Name'
+                placeholder='Full Name'
                 className='app-form-control'
                 type='text'
                 name='name'
