@@ -14,11 +14,11 @@
       background-color: $color-black;
       border: 1px solid $color-purple;
       padding-bottom: 1.5em;
-      img {
-        &:hover {
-          transform: scale(1.1);
-        }
-      }
+      // img {
+      //   &:hover {
+      //     transform: scale(1.1);
+      //   }
+      // }
       .card-body__title {
         margin-bottom: 0;
       }
