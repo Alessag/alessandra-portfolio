@@ -97,7 +97,7 @@ const Contact = () => {
                 ref={register({
                   required: true,
                   minLength: 10,
-                  maxLength: 140,
+                  maxLength: 250,
                 })}
               />
               {errors.message?.type === 'required' && (
