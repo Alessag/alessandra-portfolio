@@ -108,6 +108,10 @@ a {
   font-size: 3em;
   text-transform: uppercase;
   font-weight: bold;
+  text-align: left;
+  @media screen and (max-width: $break-portrait) {
+    text-align: center;
+  }
 }
 
 .sub-title {
