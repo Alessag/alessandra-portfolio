@@ -11,7 +11,7 @@ const Projects = ({ projects }) => {
     <Container className='project-container'>
       <h1 className='secondary-title'>Recent projects</h1>
       <Row className='justify-content-center'>
-        {projects.map((item) => (
+        {projects.reverse().map((item) => (
           <Col key={item.id} md='6' lg='4' className='projects-content__card'>
             <div className='card'>
               <div className='imgBx'>
