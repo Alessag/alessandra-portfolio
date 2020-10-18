@@ -1,7 +1,19 @@
 @import '../main.scss';
 
 .project-container {
-  padding-bottom: 5em;
+  padding-bottom: 2em;
+  .back-to-top-wrapper {
+    display: flex;
+    justify-content: flex-end;
+    a {
+      color: $color-gray;
+      border: 1.5px solid $color-purple;
+      border-radius: 50%;
+      &:hover {
+        background-color: $color-purple;
+      }
+    }
+  }
 }
 
 .projects-content__card {
