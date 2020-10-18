@@ -6,24 +6,16 @@ import {
   AiFillGithub,
 } from 'react-icons/ai';
 import { FaTelegramPlane } from 'react-icons/fa';
-import { HashLink as Link } from 'react-router-hash-link';
 import '../assets/styles/components/Footer.scss';
+import { MdCopyright } from 'react-icons/md';
 
 const Footer = () => {
   return (
     <div className='footer'>
       <Container className='footer-container'>
-        <ul className='footer__menu'>
-          <li>
-            <Link to='/'>Home</Link>
-          </li>
-          <li>
-            <Link to='/about'>About</Link>
-          </li>
-          <li>
-            <Link to='/contact'>Contact</Link>
-          </li>
-        </ul>
+        <p>
+          <MdCopyright /> Copyright 2020, All rights reserved
+        </p>
         <ul className='footer__social-links'>
           <li>
             <a
