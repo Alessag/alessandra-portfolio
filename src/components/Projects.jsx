@@ -13,7 +13,7 @@ const Projects = ({ projects }) => {
   return (
     <Container className='project-container'>
       <h1 className='secondary-title'>Recent projects</h1>
-      <Row className='justify-content-center'>
+      <Row className='justify-content-center project-row'>
         {projects.reverse().map((item) => (
           <Col key={item.id} md='6' lg='4' className='projects-content__card'>
             <div className='card'>
