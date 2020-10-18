@@ -4,6 +4,7 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import { Card, CardImg, CardBody, Container, Row, Col } from 'reactstrap';
 import { Button } from './Button';
+import BackToTop from './BackToTop';
 import '../assets/styles/components/Certificates.scss';
 
 const Certificates = ({ certificates }) => (
@@ -33,6 +34,7 @@ const Certificates = ({ certificates }) => (
         </Col>
       ))}
     </Row>
+    <BackToTop />
   </Container>
 );
 
