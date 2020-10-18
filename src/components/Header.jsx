@@ -18,7 +18,7 @@ const Header = () => {
   const toggle = () => setIsOpen(!isOpen);
 
   return (
-    <header className='header'>
+    <header className='header' id='top'>
       <Container fluid>
         <Navbar expand='md' dark>
           <NavbarBrand href='/'>
