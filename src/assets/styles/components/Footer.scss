@@ -1,28 +1,54 @@
 @import '../main.scss';
 
 .footer {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
-  // margin-top: 2em;
-  .footer__social-links {
-    padding: 0;
-    margin-top: 2rem;
+  background-color: $color-black-secondary;
+  padding: 0.5em 0;
+  .footer-container {
     display: flex;
+    justify-content: space-between;
+    align-items: center;
     flex-direction: row;
-    li {
+    .footer__social-links {
+      padding: 0;
+      margin-bottom: 0;
       display: flex;
-      align-items: center;
-      padding: 1rem;
-      list-style: none;
-      margin: auto 2rem;
+      flex-direction: row;
+      li {
+        display: flex;
+        align-items: center;
+        padding: 1rem;
+        list-style: none;
+        a {
+          color: $color-gray;
+          &:hover {
+            color: $color-purple;
+          }
+        }
+      }
     }
-  }
-  .footer__text {
-    font-weight: lighter;
-    margin-top: 0;
-    padding-bottom: 5px;
+    .footer__menu {
+      font-weight: lighter;
+      display: flex;
+      margin-bottom: 0;
+      align-items: center;
+      justify-content: center;
+      li {
+        list-style: none;
+        font-weight: bold;
+        margin-right: 0.5rem;
+        text-transform: uppercase;
+        a {
+          color: $color-gray;
+          text-decoration: none;
+          font-weight: bold;
+          &:hover {
+            color: $color-purple;
+            cursor: pointer;
+            transition: all 0.3s cubic-bezier(0.65, 0.05, 0.36, 1);
+          }
+        }
+      }
+    }
   }
 }
 

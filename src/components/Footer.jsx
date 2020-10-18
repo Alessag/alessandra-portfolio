@@ -4,15 +4,26 @@ import {
   AiOutlineInstagram,
   AiFillLinkedin,
   AiFillGithub,
-  AiOutlineCopyrightCircle,
 } from 'react-icons/ai';
 import { FaTelegramPlane } from 'react-icons/fa';
+import { HashLink as Link } from 'react-router-hash-link';
 import '../assets/styles/components/Footer.scss';
 
 const Footer = () => {
   return (
-    <Container className='footer'>
-      <div>
+    <div className='footer'>
+      <Container className='footer-container'>
+        <ul className='footer__menu'>
+          <li>
+            <Link to='/'>Home</Link>
+          </li>
+          <li>
+            <Link to='/about'>About</Link>
+          </li>
+          <li>
+            <Link to='/contact'>Contact</Link>
+          </li>
+        </ul>
         <ul className='footer__social-links'>
           <li>
             <a
@@ -20,7 +31,7 @@ const Footer = () => {
               target='_blank'
               rel='noopener noreferrer'
             >
-              <AiFillLinkedin size='1.3rem' color='white' className='icons' />
+              <AiFillLinkedin size='1.3rem' className='icons' />
             </a>
           </li>
           <li>
@@ -29,7 +40,7 @@ const Footer = () => {
               target='_blank'
               rel='noopener noreferrer'
             >
-              <FaTelegramPlane size='1.3rem' color='white' className='icons' />
+              <FaTelegramPlane size='1.3rem' className='icons' />
             </a>
           </li>
           <li>
@@ -38,7 +49,7 @@ const Footer = () => {
               target='_blank'
               rel='noopener noreferrer'
             >
-              <AiFillGithub size='1.3rem' color='white' className='icons' />
+              <AiFillGithub size='1.3rem' className='icons' />
             </a>
           </li>
           <li>
@@ -47,21 +58,12 @@ const Footer = () => {
               target='_blank'
               rel='noopener noreferrer'
             >
-              <AiOutlineInstagram
-                size='1.3rem'
-                color='white'
-                className='icons'
-              />
+              <AiOutlineInstagram size='1.3rem' className='icons' />
             </a>
           </li>
         </ul>
-      </div>
-      <div className='footer__text text-center'>
-        <p>
-          <AiOutlineCopyrightCircle /> 2020 Alessandra Amicarella
-        </p>
-      </div>
-    </Container>
+      </Container>
+    </div>
   );
 };
 
