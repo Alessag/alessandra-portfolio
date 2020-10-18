@@ -112,4 +112,13 @@
     text-align: center;
     font-size: 2.5em;
   }
+  .project-container {
+    .project-row {
+      margin-bottom: 1em;
+    }
+    .back-to-top-wrapper {
+      display: flex;
+      justify-content: center;
+    }
+  }
 }
