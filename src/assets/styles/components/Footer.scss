@@ -54,12 +54,17 @@
 
 @media screen and (max-width: $break-portrait) {
   .footer {
-    // background-color: red;
-    .footer__social-links li {
-      margin: auto 0.8rem;
-    }
-    .footer__text {
-      font-size: 0.8em;
+    .footer-container {
+      .footer__menu {
+        font-size: 12px;
+        padding-left: 0;
+      }
+
+      .footer__social-links {
+        li {
+          padding: 0.3rem;
+        }
+      }
     }
   }
 }
