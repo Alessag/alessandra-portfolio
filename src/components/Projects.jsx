@@ -8,6 +8,7 @@ import '../assets/styles/components/Projects.scss';
 import { Link, animateScroll as scroll } from 'react-scroll';
 import { RiArrowUpSLine } from 'react-icons/ri';
 import { PrimaryButton } from './Button';
+import BackToTop from './BackToTop';
 
 const Projects = ({ projects }) => {
   return (
@@ -61,19 +62,7 @@ const Projects = ({ projects }) => {
           </Col>
         ))}
       </Row>
-      <div className='back-to-top-wrapper'>
-        <Link
-          className='back-to-top-button'
-          activeClass='active'
-          to='top'
-          spy
-          smooth
-          offset={-70}
-          duration={500}
-        >
-          <RiArrowUpSLine size='2em' />
-        </Link>
-      </div>
+      <BackToTop />
     </Container>
   );
 };
