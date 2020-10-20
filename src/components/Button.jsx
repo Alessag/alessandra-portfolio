@@ -1,5 +1,7 @@
+/* eslint-disable no-unused-vars */
 import '../assets/styles/main.scss';
 import styled from '@emotion/styled';
+import { jsx, css, keyframes } from '@emotion/core';
 
 export const Button = styled.a`
   text-transform: uppercase;
@@ -27,4 +29,37 @@ export const PrimaryButton = styled(Button)`
     border-color: transparent;
     box-shadow: none;
   }
+`;
+
+/**
+ * Simple overlay
+ */
+
+export const PageFade = styled.div`
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100vh;
+  width: 100vw;
+  opacity: 1;
+  background-color: #1f1f1f;
+`;
+
+const FadeIn = keyframes`
+ 0%{
+   opacity: 0;
+ }
+
+ 100%{
+   opacity: 1;
+ }
+`;
+
+export const Wrapping = styled.div`
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  animation: ${FadeIn} ease-in-out forwards 1s;
 `;
