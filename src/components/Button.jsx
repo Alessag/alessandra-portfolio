@@ -39,10 +39,8 @@ export const PageFade = styled.div`
   position: absolute;
   top: 0;
   left: 0;
-  height: 100vh;
   width: 100vw;
-  opacity: 1;
-  background-color: #1f1f1f;
+  opacity: 0;
 `;
 
 const FadeIn = keyframes`
@@ -58,8 +56,5 @@ const FadeIn = keyframes`
 export const Wrapping = styled.div`
   width: 100%;
   height: 100%;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
   animation: ${FadeIn} ease-in-out forwards 1s;
 `;
