@@ -4,6 +4,7 @@ import Header from './components/Header';
 import Main from './components/Main';
 import Footer from './components/Footer';
 import Loader from './components/Loader';
+import { Wrapping, PageFade } from './components/Button';
 
 const API = 'https://us-central1-ale-dev-api.cloudfunctions.net/api';
 
@@ -12,7 +13,8 @@ const App = () => {
   return data.length === 0 ? (
     <Loader />
   ) : (
-    <div>
+    <Wrapping>
+      <PageFade />
       <Header />
       <Main
         name={data.name}
@@ -25,7 +27,7 @@ const App = () => {
         urlCv={data.urlCv}
       />
       <Footer />
-    </div>
+    </Wrapping>
   );
 };
 
