@@ -138,3 +138,42 @@ a {
     font-size: 2em;
   }
 }
+
+/**
+ * Individual animations
+ */
+
+@keyframes SlideUp {
+  0% {
+    opacity: 0;
+    transform: translate(0, 10px);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translate(0);
+  }
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  opacity: 0;
+  animation: SlideUp ease-in-out forwards 0.5s;
+}
+
+p,
+a {
+  opacity: 0;
+  animation: SlideUp ease-in-out forwards 0.5s;
+  animation-delay: 0.25s;
+}
+
+img {
+  opacity: 0;
+  animation: SlideUp ease-in-out forwards 0.5s;
+  animation-delay: 0.5s;
+}
